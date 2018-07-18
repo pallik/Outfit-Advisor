@@ -1,0 +1,1229 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26046E801AD6717600654DD3 /* PKOClothingItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 26046E7F1AD6717600654DD3 /* PKOClothingItemCollectionViewCell.m */; };
+		26046E861AD684B600654DD3 /* PKOClothingItemsHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26046E851AD684B600654DD3 /* PKOClothingItemsHeaderView.m */; };
+		2613C1471AD7C9DF00AE7BAA /* PKOBackgroundRemovingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2613C1461AD7C9DF00AE7BAA /* PKOBackgroundRemovingViewController.m */; };
+		2613C1591AD7E8AF00AE7BAA /* PKOBackgroundRemoving.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2613C1581AD7E8AF00AE7BAA /* PKOBackgroundRemoving.mm */; };
+		2613C15C1AD7EEAF00AE7BAA /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2613C15A1AD7EA6E00AE7BAA /* opencv2.framework */; };
+		2613C15E1AD7EEEF00AE7BAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2613C15D1AD7EEEF00AE7BAA /* Foundation.framework */; };
+		2613C1601AD7EF0000AE7BAA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2613C15F1AD7EF0000AE7BAA /* UIKit.framework */; };
+		2613C1641AD7EF6D00AE7BAA /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2613C1631AD7EF6D00AE7BAA /* AVFoundation.framework */; };
+		2613C1661AD7F18A00AE7BAA /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2613C1651AD7F18A00AE7BAA /* CoreMedia.framework */; };
+		2613C1681AD7F1D900AE7BAA /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2613C1671AD7F1D900AE7BAA /* AssetsLibrary.framework */; };
+		2613C16B1AD953D700AE7BAA /* PKOColorsDetectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2613C16A1AD953D700AE7BAA /* PKOColorsDetectionViewController.m */; };
+		263772CF1ADCF55F0051234F /* UIView+ColorOfPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = 263772CE1ADCF55F0051234F /* UIView+ColorOfPoint.m */; };
+		263772D41ADD16150051234F /* tshirt_placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 263772D31ADD16150051234F /* tshirt_placeholder.png */; };
+		263772D71ADD5B9B0051234F /* PKOBodyPartSelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 263772D61ADD5B9B0051234F /* PKOBodyPartSelectionTableViewController.m */; };
+		263772DA1ADDD20D0051234F /* PKOClothingCategorySelectionTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 263772D91ADDD20D0051234F /* PKOClothingCategorySelectionTableViewController.m */; };
+		267D09AE1ADE7864005CCEB9 /* PKOUserStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 267D09AD1ADE7864005CCEB9 /* PKOUserStore.m */; };
+		267D09B11ADEB593005CCEB9 /* PKOClothingItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 267D09B01ADEB593005CCEB9 /* PKOClothingItemViewController.m */; };
+		267D09B41ADF233F005CCEB9 /* PKOClothingItem+PKOClothingCategoryContainers.m in Sources */ = {isa = PBXBuildFile; fileRef = 267D09B31ADF233F005CCEB9 /* PKOClothingItem+PKOClothingCategoryContainers.m */; };
+		267D09BD1ADFD760005CCEB9 /* PKOClothingCombinationsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 267D09BC1ADFD760005CCEB9 /* PKOClothingCombinationsDataSource.m */; };
+		267D09C31AE000AD005CCEB9 /* PKOClothingCombinationsCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 267D09C21AE000AD005CCEB9 /* PKOClothingCombinationsCollectionViewController.m */; };
+		267D09C91AE00982005CCEB9 /* PKOClothingCombinationHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 267D09C81AE00982005CCEB9 /* PKOClothingCombinationHeaderView.m */; };
+		267D09CC1AE10BDD005CCEB9 /* PKOGeneratingClothingCombinationsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 267D09CB1AE10BDD005CCEB9 /* PKOGeneratingClothingCombinationsViewController.m */; };
+		267D09D01AE114D0005CCEB9 /* PKOClothingCombinationsGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 267D09CF1AE114D0005CCEB9 /* PKOClothingCombinationsGenerator.m */; };
+		267D09D51AE2986F005CCEB9 /* PKOClothingCombination+PKORequiredBodyParts.m in Sources */ = {isa = PBXBuildFile; fileRef = 267D09D41AE2986F005CCEB9 /* PKOClothingCombination+PKORequiredBodyParts.m */; };
+		26D7442E1AD6F10D00460D95 /* PKOImagePickerActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 26D7442D1AD6F10D00460D95 /* PKOImagePickerActionSheet.m */; };
+		26DF60D51AD5741B008624CD /* PKOClothingItemsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DF60D41AD5741B008624CD /* PKOClothingItemsViewController.m */; };
+		26DF60DA1AD58230008624CD /* PKOClothingItemsDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 26DF60D91AD58230008624CD /* PKOClothingItemsDataSource.m */; };
+		26E292641AF27F37001026CB /* UIColor+PKODefaultTint.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E292631AF27F37001026CB /* UIColor+PKODefaultTint.m */; };
+		26E656651AC95BAA009F37B9 /* PKOClothingColorRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E656641AC95BAA009F37B9 /* PKOClothingColorRating.m */; };
+		26E656E01ACAA4DF009F37B9 /* createDatapointsFromNewData.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656B01ACAA4DF009F37B9 /* createDatapointsFromNewData.c */; };
+		26E656E11ACAA4DF009F37B9 /* createFeaturesFromData.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656B21ACAA4DF009F37B9 /* createFeaturesFromData.c */; };
+		26E656E21ACAA4DF009F37B9 /* getBasicStats.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656B41ACAA4DF009F37B9 /* getBasicStats.c */; };
+		26E656E31ACAA4DF009F37B9 /* getColorSpaces.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656B61ACAA4DF009F37B9 /* getColorSpaces.c */; };
+		26E656E41ACAA4DF009F37B9 /* getHueProbFeatures.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656B81ACAA4DF009F37B9 /* getHueProbFeatures.c */; };
+		26E656E51ACAA4DF009F37B9 /* getPlaneFeatures.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656BA1ACAA4DF009F37B9 /* getPlaneFeatures.c */; };
+		26E656E61ACAA4DF009F37B9 /* mean.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656BC1ACAA4DF009F37B9 /* mean.c */; };
+		26E656E71ACAA4DF009F37B9 /* median.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656BE1ACAA4DF009F37B9 /* median.c */; };
+		26E656E81ACAA4DF009F37B9 /* pca2.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656C01ACAA4DF009F37B9 /* pca2.c */; };
+		26E656E91ACAA4DF009F37B9 /* power.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656C21ACAA4DF009F37B9 /* power.c */; };
+		26E656EA1ACAA4DF009F37B9 /* rand.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656C41ACAA4DF009F37B9 /* rand.c */; };
+		26E656EB1ACAA4DF009F37B9 /* rateColorPalette.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656C61ACAA4DF009F37B9 /* rateColorPalette.c */; };
+		26E656EC1ACAA4DF009F37B9 /* rateColorPalette_data.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656C81ACAA4DF009F37B9 /* rateColorPalette_data.c */; };
+		26E656ED1ACAA4DF009F37B9 /* rateColorPalette_emxutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656CA1ACAA4DF009F37B9 /* rateColorPalette_emxutil.c */; };
+		26E656EE1ACAA4DF009F37B9 /* rateColorPalette_initialize.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656CC1ACAA4DF009F37B9 /* rateColorPalette_initialize.c */; };
+		26E656EF1ACAA4DF009F37B9 /* rateColorPalette_rtwutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656CE1ACAA4DF009F37B9 /* rateColorPalette_rtwutil.c */; };
+		26E656F01ACAA4DF009F37B9 /* rateColorPalette_terminate.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656D01ACAA4DF009F37B9 /* rateColorPalette_terminate.c */; };
+		26E656F11ACAA4DF009F37B9 /* rdivide.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656D31ACAA4DF009F37B9 /* rdivide.c */; };
+		26E656F21ACAA4DF009F37B9 /* repmat.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656D51ACAA4DF009F37B9 /* repmat.c */; };
+		26E656F31ACAA4DF009F37B9 /* RGB2HSV.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656D71ACAA4DF009F37B9 /* RGB2HSV.c */; };
+		26E656F41ACAA4DF009F37B9 /* RGB2Lab.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656D91ACAA4DF009F37B9 /* RGB2Lab.c */; };
+		26E656F51ACAA4DF009F37B9 /* std.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656DC1ACAA4DF009F37B9 /* std.c */; };
+		26E656F61ACAA4DF009F37B9 /* sum.c in Sources */ = {isa = PBXBuildFile; fileRef = 26E656DE1ACAA4DF009F37B9 /* sum.c */; };
+		26E657131ACADF89009F37B9 /* female_business_casual.csv in Resources */ = {isa = PBXBuildFile; fileRef = 26E6570B1ACADF89009F37B9 /* female_business_casual.csv */; };
+		26E657141ACADF89009F37B9 /* female_business.csv in Resources */ = {isa = PBXBuildFile; fileRef = 26E6570C1ACADF89009F37B9 /* female_business.csv */; };
+		26E657151ACADF89009F37B9 /* female_casual.csv in Resources */ = {isa = PBXBuildFile; fileRef = 26E6570D1ACADF89009F37B9 /* female_casual.csv */; };
+		26E657161ACADF89009F37B9 /* female_sportswear.csv in Resources */ = {isa = PBXBuildFile; fileRef = 26E6570E1ACADF89009F37B9 /* female_sportswear.csv */; };
+		26E657171ACADF89009F37B9 /* male_business_casual.csv in Resources */ = {isa = PBXBuildFile; fileRef = 26E6570F1ACADF89009F37B9 /* male_business_casual.csv */; };
+		26E657181ACADF89009F37B9 /* male_business.csv in Resources */ = {isa = PBXBuildFile; fileRef = 26E657101ACADF89009F37B9 /* male_business.csv */; };
+		26E657191ACADF89009F37B9 /* male_casual.csv in Resources */ = {isa = PBXBuildFile; fileRef = 26E657111ACADF89009F37B9 /* male_casual.csv */; };
+		26E6571A1ACADF89009F37B9 /* male_sportswear.csv in Resources */ = {isa = PBXBuildFile; fileRef = 26E657121ACADF89009F37B9 /* male_sportswear.csv */; };
+		26E6571F1ACAE69F009F37B9 /* CHCSVParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E6571E1ACAE69F009F37B9 /* CHCSVParser.m */; };
+		26E657241ACAE709009F37B9 /* PKOClothingProbabilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E657221ACAE709009F37B9 /* PKOClothingProbabilities.m */; };
+		26E657251ACAE709009F37B9 /* PKOCSVHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E657231ACAE709009F37B9 /* PKOCSVHandler.m */; };
+		26E8FF151AF36D07006D09F1 /* UIView+Borders.m in Sources */ = {isa = PBXBuildFile; fileRef = 26E8FF141AF36D07006D09F1 /* UIView+Borders.m */; };
+		26E8FF181AF4F111006D09F1 /* users_full.archive in Resources */ = {isa = PBXBuildFile; fileRef = 26E8FF171AF4F111006D09F1 /* users_full.archive */; };
+		26F115671AE450E20059E8D6 /* PKOClothingCombinationCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F115661AE450E20059E8D6 /* PKOClothingCombinationCollectionViewController.m */; };
+		26F67A541AC0526C008BA676 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F67A531AC0526C008BA676 /* main.m */; };
+		26F67A571AC0526C008BA676 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F67A561AC0526C008BA676 /* AppDelegate.m */; };
+		26F67A601AC0526C008BA676 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26F67A5E1AC0526C008BA676 /* Main.storyboard */; };
+		26F67A621AC0526C008BA676 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26F67A611AC0526C008BA676 /* Images.xcassets */; };
+		26F67A651AC0526C008BA676 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 26F67A631AC0526C008BA676 /* LaunchScreen.xib */; };
+		26F67A711AC0526C008BA676 /* Clothing_AdviserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F67A701AC0526C008BA676 /* Clothing_AdviserTests.m */; };
+		26F67A841AC056F8008BA676 /* PKOClothingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F67A831AC056F8008BA676 /* PKOClothingItem.m */; };
+		26F67A961AC43C28008BA676 /* CCColorCube.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F67A931AC43C28008BA676 /* CCColorCube.m */; };
+		26F67A971AC43C28008BA676 /* CCLocalMaximum.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F67A951AC43C28008BA676 /* CCLocalMaximum.m */; };
+		26F67A9F1AC43F34008BA676 /* PKOClothingItemStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F67A9E1AC43F34008BA676 /* PKOClothingItemStore.m */; };
+		26F67AA21AC44C37008BA676 /* PKOClothingImageStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F67AA11AC44C37008BA676 /* PKOClothingImageStore.m */; };
+		26F67AA51AC4536E008BA676 /* PKOClothingCombination.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F67AA41AC4536E008BA676 /* PKOClothingCombination.m */; };
+		26F67AA81AC6F4EC008BA676 /* UIImage+PKOClothingImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F67AA71AC6F4EC008BA676 /* UIImage+PKOClothingImage.m */; };
+		26F67AAB1AC70C1E008BA676 /* NSArray+PKORandom.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F67AAA1AC70C1E008BA676 /* NSArray+PKORandom.m */; };
+		26F67AAE1AC7604B008BA676 /* PKOClothingCombinationStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F67AAD1AC7604B008BA676 /* PKOClothingCombinationStore.m */; };
+		26F67AB11AC88D83008BA676 /* PKOUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F67AB01AC88D83008BA676 /* PKOUser.m */; };
+		26F69A7D1ADBB0B900F870F3 /* PKOColorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F69A7C1ADBB0B900F870F3 /* PKOColorView.m */; };
+		26F69A801ADBC32300F870F3 /* PKOColorsContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F69A7F1ADBC32300F870F3 /* PKOColorsContainerView.m */; };
+		26F69A861ADBE33100F870F3 /* UISlider+PKOGradientBackground.m in Sources */ = {isa = PBXBuildFile; fileRef = 26F69A851ADBE33100F870F3 /* UISlider+PKOGradientBackground.m */; };
+		26F69A881ADC04E300F870F3 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26F69A871ADC04E300F870F3 /* QuartzCore.framework */; };
+		26F69A891ADC063E00F870F3 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2613C1611AD7EF4A00AE7BAA /* CoreGraphics.framework */; };
+		82C70632D32EF9FE5547DAA8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A6E4A099D49529EB7EDB830A /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26F67A6B1AC0526C008BA676 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26F67A461AC0526C008BA676 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26F67A4D1AC0526C008BA676;
+			remoteInfo = "Clothing Adviser";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		040CFC5074E2376E3F085F2A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		26046E7E1AD6717600654DD3 /* PKOClothingItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOClothingItemCollectionViewCell.h; sourceTree = "<group>"; };
+		26046E7F1AD6717600654DD3 /* PKOClothingItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOClothingItemCollectionViewCell.m; sourceTree = "<group>"; };
+		26046E841AD684B600654DD3 /* PKOClothingItemsHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOClothingItemsHeaderView.h; sourceTree = "<group>"; };
+		26046E851AD684B600654DD3 /* PKOClothingItemsHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOClothingItemsHeaderView.m; sourceTree = "<group>"; };
+		2613C1451AD7C9DF00AE7BAA /* PKOBackgroundRemovingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOBackgroundRemovingViewController.h; sourceTree = "<group>"; };
+		2613C1461AD7C9DF00AE7BAA /* PKOBackgroundRemovingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOBackgroundRemovingViewController.m; sourceTree = "<group>"; };
+		2613C14A1AD7E63E00AE7BAA /* convolve.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = convolve.h; sourceTree = "<group>"; };
+		2613C14B1AD7E63E00AE7BAA /* disjoint-set.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "disjoint-set.h"; sourceTree = "<group>"; };
+		2613C14C1AD7E63E00AE7BAA /* filter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = filter.h; sourceTree = "<group>"; };
+		2613C14D1AD7E63E00AE7BAA /* image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = image.h; sourceTree = "<group>"; };
+		2613C14E1AD7E63E00AE7BAA /* imconv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imconv.h; sourceTree = "<group>"; };
+		2613C14F1AD7E63E00AE7BAA /* imutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = imutil.h; sourceTree = "<group>"; };
+		2613C1501AD7E63E00AE7BAA /* misc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = misc.h; sourceTree = "<group>"; };
+		2613C1511AD7E63E00AE7BAA /* pnmfile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pnmfile.h; sourceTree = "<group>"; };
+		2613C1521AD7E63E00AE7BAA /* segment-graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "segment-graph.h"; sourceTree = "<group>"; };
+		2613C1531AD7E63E00AE7BAA /* segment-image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "segment-image.h"; sourceTree = "<group>"; };
+		2613C1571AD7E8AF00AE7BAA /* PKOBackgroundRemoving.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOBackgroundRemoving.h; sourceTree = "<group>"; };
+		2613C1581AD7E8AF00AE7BAA /* PKOBackgroundRemoving.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PKOBackgroundRemoving.mm; sourceTree = "<group>"; };
+		2613C15A1AD7EA6E00AE7BAA /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../../../../Library/Frameworks/opencv2.framework; sourceTree = "<group>"; };
+		2613C15D1AD7EEEF00AE7BAA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		2613C15F1AD7EF0000AE7BAA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		2613C1611AD7EF4A00AE7BAA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2613C1631AD7EF6D00AE7BAA /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		2613C1651AD7F18A00AE7BAA /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		2613C1671AD7F1D900AE7BAA /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		2613C1691AD953D700AE7BAA /* PKOColorsDetectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOColorsDetectionViewController.h; sourceTree = "<group>"; };
+		2613C16A1AD953D700AE7BAA /* PKOColorsDetectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOColorsDetectionViewController.m; sourceTree = "<group>"; };
+		261FDF021ACFF461004DB8CB /* Clothing Adviser.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Clothing Adviser.entitlements"; sourceTree = "<group>"; };
+		263772CD1ADCF55F0051234F /* UIView+ColorOfPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ColorOfPoint.h"; sourceTree = "<group>"; };
+		263772CE1ADCF55F0051234F /* UIView+ColorOfPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ColorOfPoint.m"; sourceTree = "<group>"; };
+		263772D31ADD16150051234F /* tshirt_placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tshirt_placeholder.png; sourceTree = "<group>"; };
+		263772D51ADD5B9B0051234F /* PKOBodyPartSelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOBodyPartSelectionTableViewController.h; sourceTree = "<group>"; };
+		263772D61ADD5B9B0051234F /* PKOBodyPartSelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOBodyPartSelectionTableViewController.m; sourceTree = "<group>"; };
+		263772D81ADDD20D0051234F /* PKOClothingCategorySelectionTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOClothingCategorySelectionTableViewController.h; sourceTree = "<group>"; };
+		263772D91ADDD20D0051234F /* PKOClothingCategorySelectionTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOClothingCategorySelectionTableViewController.m; sourceTree = "<group>"; };
+		267D09AC1ADE7864005CCEB9 /* PKOUserStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOUserStore.h; sourceTree = "<group>"; };
+		267D09AD1ADE7864005CCEB9 /* PKOUserStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOUserStore.m; sourceTree = "<group>"; };
+		267D09AF1ADEB593005CCEB9 /* PKOClothingItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOClothingItemViewController.h; sourceTree = "<group>"; };
+		267D09B01ADEB593005CCEB9 /* PKOClothingItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOClothingItemViewController.m; sourceTree = "<group>"; };
+		267D09B21ADF233F005CCEB9 /* PKOClothingItem+PKOClothingCategoryContainers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PKOClothingItem+PKOClothingCategoryContainers.h"; sourceTree = "<group>"; };
+		267D09B31ADF233F005CCEB9 /* PKOClothingItem+PKOClothingCategoryContainers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PKOClothingItem+PKOClothingCategoryContainers.m"; sourceTree = "<group>"; };
+		267D09BB1ADFD760005CCEB9 /* PKOClothingCombinationsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOClothingCombinationsDataSource.h; sourceTree = "<group>"; };
+		267D09BC1ADFD760005CCEB9 /* PKOClothingCombinationsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOClothingCombinationsDataSource.m; sourceTree = "<group>"; };
+		267D09C11AE000AD005CCEB9 /* PKOClothingCombinationsCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOClothingCombinationsCollectionViewController.h; sourceTree = "<group>"; };
+		267D09C21AE000AD005CCEB9 /* PKOClothingCombinationsCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOClothingCombinationsCollectionViewController.m; sourceTree = "<group>"; };
+		267D09C71AE00982005CCEB9 /* PKOClothingCombinationHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOClothingCombinationHeaderView.h; sourceTree = "<group>"; };
+		267D09C81AE00982005CCEB9 /* PKOClothingCombinationHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOClothingCombinationHeaderView.m; sourceTree = "<group>"; };
+		267D09CA1AE10BDD005CCEB9 /* PKOGeneratingClothingCombinationsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOGeneratingClothingCombinationsViewController.h; sourceTree = "<group>"; };
+		267D09CB1AE10BDD005CCEB9 /* PKOGeneratingClothingCombinationsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOGeneratingClothingCombinationsViewController.m; sourceTree = "<group>"; };
+		267D09CE1AE114D0005CCEB9 /* PKOClothingCombinationsGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOClothingCombinationsGenerator.h; sourceTree = "<group>"; };
+		267D09CF1AE114D0005CCEB9 /* PKOClothingCombinationsGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOClothingCombinationsGenerator.m; sourceTree = "<group>"; };
+		267D09D31AE2986F005CCEB9 /* PKOClothingCombination+PKORequiredBodyParts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PKOClothingCombination+PKORequiredBodyParts.h"; sourceTree = "<group>"; };
+		267D09D41AE2986F005CCEB9 /* PKOClothingCombination+PKORequiredBodyParts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PKOClothingCombination+PKORequiredBodyParts.m"; sourceTree = "<group>"; };
+		26B345471AE506E40002EB58 /* PKODebugging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKODebugging.h; sourceTree = "<group>"; };
+		26D7442C1AD6F10D00460D95 /* PKOImagePickerActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOImagePickerActionSheet.h; sourceTree = "<group>"; };
+		26D7442D1AD6F10D00460D95 /* PKOImagePickerActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOImagePickerActionSheet.m; sourceTree = "<group>"; };
+		26DF60D31AD5741B008624CD /* PKOClothingItemsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOClothingItemsViewController.h; sourceTree = "<group>"; };
+		26DF60D41AD5741B008624CD /* PKOClothingItemsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOClothingItemsViewController.m; sourceTree = "<group>"; };
+		26DF60D81AD58230008624CD /* PKOClothingItemsDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOClothingItemsDataSource.h; sourceTree = "<group>"; };
+		26DF60D91AD58230008624CD /* PKOClothingItemsDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOClothingItemsDataSource.m; sourceTree = "<group>"; };
+		26E292621AF27F37001026CB /* UIColor+PKODefaultTint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+PKODefaultTint.h"; sourceTree = "<group>"; };
+		26E292631AF27F37001026CB /* UIColor+PKODefaultTint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+PKODefaultTint.m"; sourceTree = "<group>"; };
+		26E656631AC95BAA009F37B9 /* PKOClothingColorRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOClothingColorRating.h; sourceTree = "<group>"; };
+		26E656641AC95BAA009F37B9 /* PKOClothingColorRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOClothingColorRating.m; sourceTree = "<group>"; };
+		26E656AE1ACA055A009F37B9 /* PKOColorPaletteRating.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKOColorPaletteRating.h; sourceTree = "<group>"; };
+		26E656B01ACAA4DF009F37B9 /* createDatapointsFromNewData.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = createDatapointsFromNewData.c; sourceTree = "<group>"; };
+		26E656B11ACAA4DF009F37B9 /* createDatapointsFromNewData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = createDatapointsFromNewData.h; sourceTree = "<group>"; };
+		26E656B21ACAA4DF009F37B9 /* createFeaturesFromData.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = createFeaturesFromData.c; sourceTree = "<group>"; };
+		26E656B31ACAA4DF009F37B9 /* createFeaturesFromData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = createFeaturesFromData.h; sourceTree = "<group>"; };
+		26E656B41ACAA4DF009F37B9 /* getBasicStats.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getBasicStats.c; sourceTree = "<group>"; };
+		26E656B51ACAA4DF009F37B9 /* getBasicStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getBasicStats.h; sourceTree = "<group>"; };
+		26E656B61ACAA4DF009F37B9 /* getColorSpaces.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getColorSpaces.c; sourceTree = "<group>"; };
+		26E656B71ACAA4DF009F37B9 /* getColorSpaces.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getColorSpaces.h; sourceTree = "<group>"; };
+		26E656B81ACAA4DF009F37B9 /* getHueProbFeatures.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getHueProbFeatures.c; sourceTree = "<group>"; };
+		26E656B91ACAA4DF009F37B9 /* getHueProbFeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getHueProbFeatures.h; sourceTree = "<group>"; };
+		26E656BA1ACAA4DF009F37B9 /* getPlaneFeatures.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = getPlaneFeatures.c; sourceTree = "<group>"; };
+		26E656BB1ACAA4DF009F37B9 /* getPlaneFeatures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = getPlaneFeatures.h; sourceTree = "<group>"; };
+		26E656BC1ACAA4DF009F37B9 /* mean.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mean.c; sourceTree = "<group>"; };
+		26E656BD1ACAA4DF009F37B9 /* mean.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mean.h; sourceTree = "<group>"; };
+		26E656BE1ACAA4DF009F37B9 /* median.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = median.c; sourceTree = "<group>"; };
+		26E656BF1ACAA4DF009F37B9 /* median.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = median.h; sourceTree = "<group>"; };
+		26E656C01ACAA4DF009F37B9 /* pca2.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pca2.c; sourceTree = "<group>"; };
+		26E656C11ACAA4DF009F37B9 /* pca2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pca2.h; sourceTree = "<group>"; };
+		26E656C21ACAA4DF009F37B9 /* power.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = power.c; sourceTree = "<group>"; };
+		26E656C31ACAA4DF009F37B9 /* power.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = power.h; sourceTree = "<group>"; };
+		26E656C41ACAA4DF009F37B9 /* rand.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rand.c; sourceTree = "<group>"; };
+		26E656C51ACAA4DF009F37B9 /* rand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rand.h; sourceTree = "<group>"; };
+		26E656C61ACAA4DF009F37B9 /* rateColorPalette.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rateColorPalette.c; sourceTree = "<group>"; };
+		26E656C71ACAA4DF009F37B9 /* rateColorPalette.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rateColorPalette.h; sourceTree = "<group>"; };
+		26E656C81ACAA4DF009F37B9 /* rateColorPalette_data.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rateColorPalette_data.c; sourceTree = "<group>"; };
+		26E656C91ACAA4DF009F37B9 /* rateColorPalette_data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rateColorPalette_data.h; sourceTree = "<group>"; };
+		26E656CA1ACAA4DF009F37B9 /* rateColorPalette_emxutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rateColorPalette_emxutil.c; sourceTree = "<group>"; };
+		26E656CB1ACAA4DF009F37B9 /* rateColorPalette_emxutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rateColorPalette_emxutil.h; sourceTree = "<group>"; };
+		26E656CC1ACAA4DF009F37B9 /* rateColorPalette_initialize.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rateColorPalette_initialize.c; sourceTree = "<group>"; };
+		26E656CD1ACAA4DF009F37B9 /* rateColorPalette_initialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rateColorPalette_initialize.h; sourceTree = "<group>"; };
+		26E656CE1ACAA4DF009F37B9 /* rateColorPalette_rtwutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rateColorPalette_rtwutil.c; sourceTree = "<group>"; };
+		26E656CF1ACAA4DF009F37B9 /* rateColorPalette_rtwutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rateColorPalette_rtwutil.h; sourceTree = "<group>"; };
+		26E656D01ACAA4DF009F37B9 /* rateColorPalette_terminate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rateColorPalette_terminate.c; sourceTree = "<group>"; };
+		26E656D11ACAA4DF009F37B9 /* rateColorPalette_terminate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rateColorPalette_terminate.h; sourceTree = "<group>"; };
+		26E656D21ACAA4DF009F37B9 /* rateColorPalette_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rateColorPalette_types.h; sourceTree = "<group>"; };
+		26E656D31ACAA4DF009F37B9 /* rdivide.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rdivide.c; sourceTree = "<group>"; };
+		26E656D41ACAA4DF009F37B9 /* rdivide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rdivide.h; sourceTree = "<group>"; };
+		26E656D51ACAA4DF009F37B9 /* repmat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = repmat.c; sourceTree = "<group>"; };
+		26E656D61ACAA4DF009F37B9 /* repmat.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = repmat.h; sourceTree = "<group>"; };
+		26E656D71ACAA4DF009F37B9 /* RGB2HSV.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RGB2HSV.c; sourceTree = "<group>"; };
+		26E656D81ACAA4DF009F37B9 /* RGB2HSV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGB2HSV.h; sourceTree = "<group>"; };
+		26E656D91ACAA4DF009F37B9 /* RGB2Lab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = RGB2Lab.c; sourceTree = "<group>"; };
+		26E656DA1ACAA4DF009F37B9 /* RGB2Lab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RGB2Lab.h; sourceTree = "<group>"; };
+		26E656DB1ACAA4DF009F37B9 /* rtwtypes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rtwtypes.h; sourceTree = "<group>"; };
+		26E656DC1ACAA4DF009F37B9 /* std.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = std.c; sourceTree = "<group>"; };
+		26E656DD1ACAA4DF009F37B9 /* std.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = std.h; sourceTree = "<group>"; };
+		26E656DE1ACAA4DF009F37B9 /* sum.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sum.c; sourceTree = "<group>"; };
+		26E656DF1ACAA4DF009F37B9 /* sum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sum.h; sourceTree = "<group>"; };
+		26E6570B1ACADF89009F37B9 /* female_business_casual.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = female_business_casual.csv; sourceTree = "<group>"; };
+		26E6570C1ACADF89009F37B9 /* female_business.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = female_business.csv; sourceTree = "<group>"; };
+		26E6570D1ACADF89009F37B9 /* female_casual.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = female_casual.csv; sourceTree = "<group>"; };
+		26E6570E1ACADF89009F37B9 /* female_sportswear.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = female_sportswear.csv; sourceTree = "<group>"; };
+		26E6570F1ACADF89009F37B9 /* male_business_casual.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = male_business_casual.csv; sourceTree = "<group>"; };
+		26E657101ACADF89009F37B9 /* male_business.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = male_business.csv; sourceTree = "<group>"; };
+		26E657111ACADF89009F37B9 /* male_casual.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = male_casual.csv; sourceTree = "<group>"; };
+		26E657121ACADF89009F37B9 /* male_sportswear.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = male_sportswear.csv; sourceTree = "<group>"; };
+		26E6571D1ACAE69F009F37B9 /* CHCSVParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHCSVParser.h; sourceTree = "<group>"; };
+		26E6571E1ACAE69F009F37B9 /* CHCSVParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHCSVParser.m; sourceTree = "<group>"; };
+		26E657201ACAE709009F37B9 /* PKOClothingProbabilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOClothingProbabilities.h; sourceTree = "<group>"; };
+		26E657211ACAE709009F37B9 /* PKOCSVHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOCSVHandler.h; sourceTree = "<group>"; };
+		26E657221ACAE709009F37B9 /* PKOClothingProbabilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOClothingProbabilities.m; sourceTree = "<group>"; };
+		26E657231ACAE709009F37B9 /* PKOCSVHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOCSVHandler.m; sourceTree = "<group>"; };
+		26E8FF131AF36D07006D09F1 /* UIView+Borders.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Borders.h"; sourceTree = "<group>"; };
+		26E8FF141AF36D07006D09F1 /* UIView+Borders.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Borders.m"; sourceTree = "<group>"; };
+		26E8FF171AF4F111006D09F1 /* users_full.archive */ = {isa = PBXFileReference; lastKnownFileType = file.bplist; path = users_full.archive; sourceTree = "<group>"; };
+		26F115651AE450E20059E8D6 /* PKOClothingCombinationCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOClothingCombinationCollectionViewController.h; sourceTree = "<group>"; };
+		26F115661AE450E20059E8D6 /* PKOClothingCombinationCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOClothingCombinationCollectionViewController.m; sourceTree = "<group>"; };
+		26F67A4E1AC0526C008BA676 /* Clothing Adviser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Clothing Adviser.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26F67A521AC0526C008BA676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26F67A531AC0526C008BA676 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		26F67A551AC0526C008BA676 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		26F67A561AC0526C008BA676 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		26F67A5F1AC0526C008BA676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26F67A611AC0526C008BA676 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		26F67A641AC0526C008BA676 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		26F67A6A1AC0526C008BA676 /* Clothing AdviserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Clothing AdviserTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		26F67A6F1AC0526C008BA676 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26F67A701AC0526C008BA676 /* Clothing_AdviserTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Clothing_AdviserTests.m; sourceTree = "<group>"; };
+		26F67A821AC056F8008BA676 /* PKOClothingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOClothingItem.h; sourceTree = "<group>"; };
+		26F67A831AC056F8008BA676 /* PKOClothingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOClothingItem.m; sourceTree = "<group>"; };
+		26F67A851AC05848008BA676 /* PKOClothingConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKOClothingConstants.h; sourceTree = "<group>"; };
+		26F67A921AC43C28008BA676 /* CCColorCube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCColorCube.h; sourceTree = "<group>"; };
+		26F67A931AC43C28008BA676 /* CCColorCube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCColorCube.m; sourceTree = "<group>"; };
+		26F67A941AC43C28008BA676 /* CCLocalMaximum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCLocalMaximum.h; sourceTree = "<group>"; };
+		26F67A951AC43C28008BA676 /* CCLocalMaximum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCLocalMaximum.m; sourceTree = "<group>"; };
+		26F67A9D1AC43F34008BA676 /* PKOClothingItemStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOClothingItemStore.h; sourceTree = "<group>"; };
+		26F67A9E1AC43F34008BA676 /* PKOClothingItemStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOClothingItemStore.m; sourceTree = "<group>"; };
+		26F67AA01AC44C37008BA676 /* PKOClothingImageStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOClothingImageStore.h; sourceTree = "<group>"; };
+		26F67AA11AC44C37008BA676 /* PKOClothingImageStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOClothingImageStore.m; sourceTree = "<group>"; };
+		26F67AA31AC4536E008BA676 /* PKOClothingCombination.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOClothingCombination.h; sourceTree = "<group>"; };
+		26F67AA41AC4536E008BA676 /* PKOClothingCombination.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOClothingCombination.m; sourceTree = "<group>"; };
+		26F67AA61AC6F4EC008BA676 /* UIImage+PKOClothingImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PKOClothingImage.h"; sourceTree = "<group>"; };
+		26F67AA71AC6F4EC008BA676 /* UIImage+PKOClothingImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PKOClothingImage.m"; sourceTree = "<group>"; };
+		26F67AA91AC70C1E008BA676 /* NSArray+PKORandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PKORandom.h"; sourceTree = "<group>"; };
+		26F67AAA1AC70C1E008BA676 /* NSArray+PKORandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PKORandom.m"; sourceTree = "<group>"; };
+		26F67AAC1AC7604B008BA676 /* PKOClothingCombinationStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOClothingCombinationStore.h; sourceTree = "<group>"; };
+		26F67AAD1AC7604B008BA676 /* PKOClothingCombinationStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOClothingCombinationStore.m; sourceTree = "<group>"; };
+		26F67AAF1AC88D83008BA676 /* PKOUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOUser.h; sourceTree = "<group>"; };
+		26F67AB01AC88D83008BA676 /* PKOUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOUser.m; sourceTree = "<group>"; };
+		26F69A7B1ADBB0B900F870F3 /* PKOColorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOColorView.h; sourceTree = "<group>"; };
+		26F69A7C1ADBB0B900F870F3 /* PKOColorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOColorView.m; sourceTree = "<group>"; };
+		26F69A7E1ADBC32300F870F3 /* PKOColorsContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PKOColorsContainerView.h; sourceTree = "<group>"; };
+		26F69A7F1ADBC32300F870F3 /* PKOColorsContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PKOColorsContainerView.m; sourceTree = "<group>"; };
+		26F69A841ADBE33100F870F3 /* UISlider+PKOGradientBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+PKOGradientBackground.h"; sourceTree = "<group>"; };
+		26F69A851ADBE33100F870F3 /* UISlider+PKOGradientBackground.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+PKOGradientBackground.m"; sourceTree = "<group>"; };
+		26F69A871ADC04E300F870F3 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		A6E4A099D49529EB7EDB830A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E0FA3305C3F3BEDCF88512C0 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26F67A4B1AC0526C008BA676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F69A891ADC063E00F870F3 /* CoreGraphics.framework in Frameworks */,
+				26F69A881ADC04E300F870F3 /* QuartzCore.framework in Frameworks */,
+				2613C1681AD7F1D900AE7BAA /* AssetsLibrary.framework in Frameworks */,
+				2613C1661AD7F18A00AE7BAA /* CoreMedia.framework in Frameworks */,
+				2613C1641AD7EF6D00AE7BAA /* AVFoundation.framework in Frameworks */,
+				2613C1601AD7EF0000AE7BAA /* UIKit.framework in Frameworks */,
+				2613C15E1AD7EEEF00AE7BAA /* Foundation.framework in Frameworks */,
+				2613C15C1AD7EEAF00AE7BAA /* opencv2.framework in Frameworks */,
+				82C70632D32EF9FE5547DAA8 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26F67A671AC0526C008BA676 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2613C1481AD7E5B400AE7BAA /* Background Removing */ = {
+			isa = PBXGroup;
+			children = (
+				2613C1571AD7E8AF00AE7BAA /* PKOBackgroundRemoving.h */,
+				2613C1581AD7E8AF00AE7BAA /* PKOBackgroundRemoving.mm */,
+				2613C1491AD7E63E00AE7BAA /* Segmentation */,
+			);
+			name = "Background Removing";
+			sourceTree = "<group>";
+		};
+		2613C1491AD7E63E00AE7BAA /* Segmentation */ = {
+			isa = PBXGroup;
+			children = (
+				2613C14A1AD7E63E00AE7BAA /* convolve.h */,
+				2613C14B1AD7E63E00AE7BAA /* disjoint-set.h */,
+				2613C14C1AD7E63E00AE7BAA /* filter.h */,
+				2613C14D1AD7E63E00AE7BAA /* image.h */,
+				2613C14E1AD7E63E00AE7BAA /* imconv.h */,
+				2613C14F1AD7E63E00AE7BAA /* imutil.h */,
+				2613C1501AD7E63E00AE7BAA /* misc.h */,
+				2613C1511AD7E63E00AE7BAA /* pnmfile.h */,
+				2613C1521AD7E63E00AE7BAA /* segment-graph.h */,
+				2613C1531AD7E63E00AE7BAA /* segment-image.h */,
+			);
+			path = Segmentation;
+			sourceTree = "<group>";
+		};
+		263772CC1ADCF55F0051234F /* UIView+ColorOfPoint */ = {
+			isa = PBXGroup;
+			children = (
+				263772CD1ADCF55F0051234F /* UIView+ColorOfPoint.h */,
+				263772CE1ADCF55F0051234F /* UIView+ColorOfPoint.m */,
+			);
+			path = "UIView+ColorOfPoint";
+			sourceTree = "<group>";
+		};
+		267D09B81ADFB3BC005CCEB9 /* Clothes tab */ = {
+			isa = PBXGroup;
+			children = (
+				26DF60D71AD581FA008624CD /* Data Sources */,
+				2613C1451AD7C9DF00AE7BAA /* PKOBackgroundRemovingViewController.h */,
+				263772D51ADD5B9B0051234F /* PKOBodyPartSelectionTableViewController.h */,
+				263772D81ADDD20D0051234F /* PKOClothingCategorySelectionTableViewController.h */,
+				26DF60D31AD5741B008624CD /* PKOClothingItemsViewController.h */,
+				267D09AF1ADEB593005CCEB9 /* PKOClothingItemViewController.h */,
+				2613C1691AD953D700AE7BAA /* PKOColorsDetectionViewController.h */,
+				2613C1461AD7C9DF00AE7BAA /* PKOBackgroundRemovingViewController.m */,
+				263772D61ADD5B9B0051234F /* PKOBodyPartSelectionTableViewController.m */,
+				263772D91ADDD20D0051234F /* PKOClothingCategorySelectionTableViewController.m */,
+				26DF60D41AD5741B008624CD /* PKOClothingItemsViewController.m */,
+				267D09B01ADEB593005CCEB9 /* PKOClothingItemViewController.m */,
+				2613C16A1AD953D700AE7BAA /* PKOColorsDetectionViewController.m */,
+			);
+			name = "Clothes tab";
+			sourceTree = "<group>";
+		};
+		267D09B91ADFB3D5005CCEB9 /* Combinations tab */ = {
+			isa = PBXGroup;
+			children = (
+				267D09BA1ADFD6CF005CCEB9 /* Data Sources */,
+				267D09C11AE000AD005CCEB9 /* PKOClothingCombinationsCollectionViewController.h */,
+				267D09C21AE000AD005CCEB9 /* PKOClothingCombinationsCollectionViewController.m */,
+				267D09CA1AE10BDD005CCEB9 /* PKOGeneratingClothingCombinationsViewController.h */,
+				267D09CB1AE10BDD005CCEB9 /* PKOGeneratingClothingCombinationsViewController.m */,
+				26F115651AE450E20059E8D6 /* PKOClothingCombinationCollectionViewController.h */,
+				26F115661AE450E20059E8D6 /* PKOClothingCombinationCollectionViewController.m */,
+			);
+			name = "Combinations tab";
+			sourceTree = "<group>";
+		};
+		267D09BA1ADFD6CF005CCEB9 /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				267D09BB1ADFD760005CCEB9 /* PKOClothingCombinationsDataSource.h */,
+				267D09BC1ADFD760005CCEB9 /* PKOClothingCombinationsDataSource.m */,
+			);
+			name = "Data Sources";
+			sourceTree = "<group>";
+		};
+		267D09CD1AE11489005CCEB9 /* Generating combinations */ = {
+			isa = PBXGroup;
+			children = (
+				267D09CE1AE114D0005CCEB9 /* PKOClothingCombinationsGenerator.h */,
+				267D09CF1AE114D0005CCEB9 /* PKOClothingCombinationsGenerator.m */,
+			);
+			name = "Generating combinations";
+			sourceTree = "<group>";
+		};
+		26D7442B1AD6F0F300460D95 /* Image Picker Action Sheet */ = {
+			isa = PBXGroup;
+			children = (
+				26D7442C1AD6F10D00460D95 /* PKOImagePickerActionSheet.h */,
+				26D7442D1AD6F10D00460D95 /* PKOImagePickerActionSheet.m */,
+			);
+			name = "Image Picker Action Sheet";
+			sourceTree = "<group>";
+		};
+		26DF60D71AD581FA008624CD /* Data Sources */ = {
+			isa = PBXGroup;
+			children = (
+				26DF60D81AD58230008624CD /* PKOClothingItemsDataSource.h */,
+				26DF60D91AD58230008624CD /* PKOClothingItemsDataSource.m */,
+			);
+			name = "Data Sources";
+			sourceTree = "<group>";
+		};
+		26E656621AC95B55009F37B9 /* ClothingColorPaletteRating */ = {
+			isa = PBXGroup;
+			children = (
+				26E656AF1ACAA4DF009F37B9 /* ColorPaletteRatingMATLAB */,
+				26E656631AC95BAA009F37B9 /* PKOClothingColorRating.h */,
+				26E656641AC95BAA009F37B9 /* PKOClothingColorRating.m */,
+				26E656AE1ACA055A009F37B9 /* PKOColorPaletteRating.h */,
+			);
+			name = ClothingColorPaletteRating;
+			sourceTree = "<group>";
+		};
+		26E656AF1ACAA4DF009F37B9 /* ColorPaletteRatingMATLAB */ = {
+			isa = PBXGroup;
+			children = (
+				26E656B01ACAA4DF009F37B9 /* createDatapointsFromNewData.c */,
+				26E656B11ACAA4DF009F37B9 /* createDatapointsFromNewData.h */,
+				26E656B21ACAA4DF009F37B9 /* createFeaturesFromData.c */,
+				26E656B31ACAA4DF009F37B9 /* createFeaturesFromData.h */,
+				26E656B41ACAA4DF009F37B9 /* getBasicStats.c */,
+				26E656B51ACAA4DF009F37B9 /* getBasicStats.h */,
+				26E656B61ACAA4DF009F37B9 /* getColorSpaces.c */,
+				26E656B71ACAA4DF009F37B9 /* getColorSpaces.h */,
+				26E656B81ACAA4DF009F37B9 /* getHueProbFeatures.c */,
+				26E656B91ACAA4DF009F37B9 /* getHueProbFeatures.h */,
+				26E656BA1ACAA4DF009F37B9 /* getPlaneFeatures.c */,
+				26E656BB1ACAA4DF009F37B9 /* getPlaneFeatures.h */,
+				26E656BC1ACAA4DF009F37B9 /* mean.c */,
+				26E656BD1ACAA4DF009F37B9 /* mean.h */,
+				26E656BE1ACAA4DF009F37B9 /* median.c */,
+				26E656BF1ACAA4DF009F37B9 /* median.h */,
+				26E656C01ACAA4DF009F37B9 /* pca2.c */,
+				26E656C11ACAA4DF009F37B9 /* pca2.h */,
+				26E656C21ACAA4DF009F37B9 /* power.c */,
+				26E656C31ACAA4DF009F37B9 /* power.h */,
+				26E656C41ACAA4DF009F37B9 /* rand.c */,
+				26E656C51ACAA4DF009F37B9 /* rand.h */,
+				26E656C61ACAA4DF009F37B9 /* rateColorPalette.c */,
+				26E656C71ACAA4DF009F37B9 /* rateColorPalette.h */,
+				26E656C81ACAA4DF009F37B9 /* rateColorPalette_data.c */,
+				26E656C91ACAA4DF009F37B9 /* rateColorPalette_data.h */,
+				26E656CA1ACAA4DF009F37B9 /* rateColorPalette_emxutil.c */,
+				26E656CB1ACAA4DF009F37B9 /* rateColorPalette_emxutil.h */,
+				26E656CC1ACAA4DF009F37B9 /* rateColorPalette_initialize.c */,
+				26E656CD1ACAA4DF009F37B9 /* rateColorPalette_initialize.h */,
+				26E656CE1ACAA4DF009F37B9 /* rateColorPalette_rtwutil.c */,
+				26E656CF1ACAA4DF009F37B9 /* rateColorPalette_rtwutil.h */,
+				26E656D01ACAA4DF009F37B9 /* rateColorPalette_terminate.c */,
+				26E656D11ACAA4DF009F37B9 /* rateColorPalette_terminate.h */,
+				26E656D21ACAA4DF009F37B9 /* rateColorPalette_types.h */,
+				26E656D31ACAA4DF009F37B9 /* rdivide.c */,
+				26E656D41ACAA4DF009F37B9 /* rdivide.h */,
+				26E656D51ACAA4DF009F37B9 /* repmat.c */,
+				26E656D61ACAA4DF009F37B9 /* repmat.h */,
+				26E656D71ACAA4DF009F37B9 /* RGB2HSV.c */,
+				26E656D81ACAA4DF009F37B9 /* RGB2HSV.h */,
+				26E656D91ACAA4DF009F37B9 /* RGB2Lab.c */,
+				26E656DA1ACAA4DF009F37B9 /* RGB2Lab.h */,
+				26E656DB1ACAA4DF009F37B9 /* rtwtypes.h */,
+				26E656DC1ACAA4DF009F37B9 /* std.c */,
+				26E656DD1ACAA4DF009F37B9 /* std.h */,
+				26E656DE1ACAA4DF009F37B9 /* sum.c */,
+				26E656DF1ACAA4DF009F37B9 /* sum.h */,
+			);
+			path = ColorPaletteRatingMATLAB;
+			sourceTree = "<group>";
+		};
+		26E6570A1ACADF42009F37B9 /* CSV Probabilites */ = {
+			isa = PBXGroup;
+			children = (
+				26E6570B1ACADF89009F37B9 /* female_business_casual.csv */,
+				26E6570C1ACADF89009F37B9 /* female_business.csv */,
+				26E6570D1ACADF89009F37B9 /* female_casual.csv */,
+				26E6570E1ACADF89009F37B9 /* female_sportswear.csv */,
+				26E6570F1ACADF89009F37B9 /* male_business_casual.csv */,
+				26E657101ACADF89009F37B9 /* male_business.csv */,
+				26E657111ACADF89009F37B9 /* male_casual.csv */,
+				26E657121ACADF89009F37B9 /* male_sportswear.csv */,
+			);
+			name = "CSV Probabilites";
+			sourceTree = "<group>";
+		};
+		26E6571B1ACAE68B009F37B9 /* Clothing Probabilites */ = {
+			isa = PBXGroup;
+			children = (
+				26E6571C1ACAE69F009F37B9 /* CHCSVParser */,
+				26E657201ACAE709009F37B9 /* PKOClothingProbabilities.h */,
+				26E657221ACAE709009F37B9 /* PKOClothingProbabilities.m */,
+				26E657211ACAE709009F37B9 /* PKOCSVHandler.h */,
+				26E657231ACAE709009F37B9 /* PKOCSVHandler.m */,
+			);
+			name = "Clothing Probabilites";
+			sourceTree = "<group>";
+		};
+		26E6571C1ACAE69F009F37B9 /* CHCSVParser */ = {
+			isa = PBXGroup;
+			children = (
+				26E6571D1ACAE69F009F37B9 /* CHCSVParser.h */,
+				26E6571E1ACAE69F009F37B9 /* CHCSVParser.m */,
+			);
+			path = CHCSVParser;
+			sourceTree = "<group>";
+		};
+		26E8FF121AF36CE7006D09F1 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				26E8FF131AF36D07006D09F1 /* UIView+Borders.h */,
+				26E8FF141AF36D07006D09F1 /* UIView+Borders.m */,
+				26F67AA61AC6F4EC008BA676 /* UIImage+PKOClothingImage.h */,
+				26F67AA71AC6F4EC008BA676 /* UIImage+PKOClothingImage.m */,
+				26F67AA91AC70C1E008BA676 /* NSArray+PKORandom.h */,
+				26F67AAA1AC70C1E008BA676 /* NSArray+PKORandom.m */,
+				26F69A841ADBE33100F870F3 /* UISlider+PKOGradientBackground.h */,
+				26F69A851ADBE33100F870F3 /* UISlider+PKOGradientBackground.m */,
+				267D09B21ADF233F005CCEB9 /* PKOClothingItem+PKOClothingCategoryContainers.h */,
+				267D09B31ADF233F005CCEB9 /* PKOClothingItem+PKOClothingCategoryContainers.m */,
+				267D09D31AE2986F005CCEB9 /* PKOClothingCombination+PKORequiredBodyParts.h */,
+				267D09D41AE2986F005CCEB9 /* PKOClothingCombination+PKORequiredBodyParts.m */,
+				26E292621AF27F37001026CB /* UIColor+PKODefaultTint.h */,
+				26E292631AF27F37001026CB /* UIColor+PKODefaultTint.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		26E8FF161AF4F0FD006D09F1 /* Test data */ = {
+			isa = PBXGroup;
+			children = (
+				26E8FF171AF4F111006D09F1 /* users_full.archive */,
+			);
+			name = "Test data";
+			sourceTree = "<group>";
+		};
+		26F67A451AC0526C008BA676 = {
+			isa = PBXGroup;
+			children = (
+				26F67A501AC0526C008BA676 /* Clothing Adviser */,
+				26F67A6D1AC0526C008BA676 /* Clothing AdviserTests */,
+				26F67A4F1AC0526C008BA676 /* Products */,
+				D66676B26D2017F7D6327B74 /* Pods */,
+				72553665E57629AADC35D220 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		26F67A4F1AC0526C008BA676 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26F67A4E1AC0526C008BA676 /* Clothing Adviser.app */,
+				26F67A6A1AC0526C008BA676 /* Clothing AdviserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26F67A501AC0526C008BA676 /* Clothing Adviser */ = {
+			isa = PBXGroup;
+			children = (
+				261FDF021ACFF461004DB8CB /* Clothing Adviser.entitlements */,
+				26F67A7B1AC05307008BA676 /* Classes */,
+				26F67A7A1AC052A3008BA676 /* Resources */,
+				26F67A511AC0526C008BA676 /* Supporting Files */,
+			);
+			path = "Clothing Adviser";
+			sourceTree = "<group>";
+		};
+		26F67A511AC0526C008BA676 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				26F67A521AC0526C008BA676 /* Info.plist */,
+				26F67A531AC0526C008BA676 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26F67A6D1AC0526C008BA676 /* Clothing AdviserTests */ = {
+			isa = PBXGroup;
+			children = (
+				26F67A701AC0526C008BA676 /* Clothing_AdviserTests.m */,
+				26F67A6E1AC0526C008BA676 /* Supporting Files */,
+			);
+			path = "Clothing AdviserTests";
+			sourceTree = "<group>";
+		};
+		26F67A6E1AC0526C008BA676 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				26F67A6F1AC0526C008BA676 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		26F67A7A1AC052A3008BA676 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				26E8FF161AF4F0FD006D09F1 /* Test data */,
+				26E6570A1ACADF42009F37B9 /* CSV Probabilites */,
+				26F67A981AC43D25008BA676 /* Images */,
+				26F67A8D1AC1B78A008BA676 /* NIBs */,
+				26F67A611AC0526C008BA676 /* Images.xcassets */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		26F67A7B1AC05307008BA676 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				26F67A7C1AC0530E008BA676 /* AppDelegate */,
+				26F67A7D1AC05318008BA676 /* Controllers */,
+				26F67A7E1AC05629008BA676 /* Models */,
+				26F67A7F1AC05661008BA676 /* Views */,
+				26F67A891AC061A9008BA676 /* Stores */,
+				26F67A811AC0567D008BA676 /* Libraries */,
+				26F67A801AC05668008BA676 /* Support */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		26F67A7C1AC0530E008BA676 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				26F67A551AC0526C008BA676 /* AppDelegate.h */,
+				26F67A561AC0526C008BA676 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		26F67A7D1AC05318008BA676 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				267D09B81ADFB3BC005CCEB9 /* Clothes tab */,
+				267D09B91ADFB3D5005CCEB9 /* Combinations tab */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		26F67A7E1AC05629008BA676 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26F67A821AC056F8008BA676 /* PKOClothingItem.h */,
+				26F67A831AC056F8008BA676 /* PKOClothingItem.m */,
+				26F67AA31AC4536E008BA676 /* PKOClothingCombination.h */,
+				26F67AA41AC4536E008BA676 /* PKOClothingCombination.m */,
+				26F67AAF1AC88D83008BA676 /* PKOUser.h */,
+				26F67AB01AC88D83008BA676 /* PKOUser.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		26F67A7F1AC05661008BA676 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				26046E7E1AD6717600654DD3 /* PKOClothingItemCollectionViewCell.h */,
+				26046E7F1AD6717600654DD3 /* PKOClothingItemCollectionViewCell.m */,
+				26046E841AD684B600654DD3 /* PKOClothingItemsHeaderView.h */,
+				26046E851AD684B600654DD3 /* PKOClothingItemsHeaderView.m */,
+				26F69A7B1ADBB0B900F870F3 /* PKOColorView.h */,
+				26F69A7C1ADBB0B900F870F3 /* PKOColorView.m */,
+				26F69A7E1ADBC32300F870F3 /* PKOColorsContainerView.h */,
+				26F69A7F1ADBC32300F870F3 /* PKOColorsContainerView.m */,
+				267D09C71AE00982005CCEB9 /* PKOClothingCombinationHeaderView.h */,
+				267D09C81AE00982005CCEB9 /* PKOClothingCombinationHeaderView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		26F67A801AC05668008BA676 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				26F67A851AC05848008BA676 /* PKOClothingConstants.h */,
+				26B345471AE506E40002EB58 /* PKODebugging.h */,
+				26E8FF121AF36CE7006D09F1 /* Categories */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
+		26F67A811AC0567D008BA676 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				267D09CD1AE11489005CCEB9 /* Generating combinations */,
+				263772CC1ADCF55F0051234F /* UIView+ColorOfPoint */,
+				2613C1481AD7E5B400AE7BAA /* Background Removing */,
+				26D7442B1AD6F0F300460D95 /* Image Picker Action Sheet */,
+				26E6571B1ACAE68B009F37B9 /* Clothing Probabilites */,
+				26E656621AC95B55009F37B9 /* ClothingColorPaletteRating */,
+				26F67A911AC43C28008BA676 /* ColorCube */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		26F67A891AC061A9008BA676 /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				26F67A9D1AC43F34008BA676 /* PKOClothingItemStore.h */,
+				26F67A9E1AC43F34008BA676 /* PKOClothingItemStore.m */,
+				26F67AA01AC44C37008BA676 /* PKOClothingImageStore.h */,
+				26F67AA11AC44C37008BA676 /* PKOClothingImageStore.m */,
+				26F67AAC1AC7604B008BA676 /* PKOClothingCombinationStore.h */,
+				26F67AAD1AC7604B008BA676 /* PKOClothingCombinationStore.m */,
+				267D09AC1ADE7864005CCEB9 /* PKOUserStore.h */,
+				267D09AD1ADE7864005CCEB9 /* PKOUserStore.m */,
+			);
+			name = Stores;
+			sourceTree = "<group>";
+		};
+		26F67A8D1AC1B78A008BA676 /* NIBs */ = {
+			isa = PBXGroup;
+			children = (
+				26F67A5E1AC0526C008BA676 /* Main.storyboard */,
+				26F67A631AC0526C008BA676 /* LaunchScreen.xib */,
+			);
+			name = NIBs;
+			sourceTree = "<group>";
+		};
+		26F67A911AC43C28008BA676 /* ColorCube */ = {
+			isa = PBXGroup;
+			children = (
+				26F67A921AC43C28008BA676 /* CCColorCube.h */,
+				26F67A931AC43C28008BA676 /* CCColorCube.m */,
+				26F67A941AC43C28008BA676 /* CCLocalMaximum.h */,
+				26F67A951AC43C28008BA676 /* CCLocalMaximum.m */,
+			);
+			path = ColorCube;
+			sourceTree = "<group>";
+		};
+		26F67A981AC43D25008BA676 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				263772D31ADD16150051234F /* tshirt_placeholder.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		72553665E57629AADC35D220 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				26F69A871ADC04E300F870F3 /* QuartzCore.framework */,
+				2613C1671AD7F1D900AE7BAA /* AssetsLibrary.framework */,
+				2613C1651AD7F18A00AE7BAA /* CoreMedia.framework */,
+				2613C1631AD7EF6D00AE7BAA /* AVFoundation.framework */,
+				2613C1611AD7EF4A00AE7BAA /* CoreGraphics.framework */,
+				2613C15F1AD7EF0000AE7BAA /* UIKit.framework */,
+				2613C15D1AD7EEEF00AE7BAA /* Foundation.framework */,
+				2613C15A1AD7EA6E00AE7BAA /* opencv2.framework */,
+				A6E4A099D49529EB7EDB830A /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D66676B26D2017F7D6327B74 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				040CFC5074E2376E3F085F2A /* Pods.debug.xcconfig */,
+				E0FA3305C3F3BEDCF88512C0 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		26F67A4D1AC0526C008BA676 /* Clothing Adviser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26F67A741AC0526C008BA676 /* Build configuration list for PBXNativeTarget "Clothing Adviser" */;
+			buildPhases = (
+				567A9546862F1897240E3D11 /* Check Pods Manifest.lock */,
+				26F67A4A1AC0526C008BA676 /* Sources */,
+				26F67A4B1AC0526C008BA676 /* Frameworks */,
+				26F67A4C1AC0526C008BA676 /* Resources */,
+				7EA06DEE2AC39B428C576CBD /* Copy Pods Resources */,
+				267FB7D11AE6C00E00B232D1 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Clothing Adviser";
+			productName = "Clothing Adviser";
+			productReference = 26F67A4E1AC0526C008BA676 /* Clothing Adviser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26F67A691AC0526C008BA676 /* Clothing AdviserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26F67A771AC0526C008BA676 /* Build configuration list for PBXNativeTarget "Clothing AdviserTests" */;
+			buildPhases = (
+				26F67A661AC0526C008BA676 /* Sources */,
+				26F67A671AC0526C008BA676 /* Frameworks */,
+				26F67A681AC0526C008BA676 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26F67A6C1AC0526C008BA676 /* PBXTargetDependency */,
+			);
+			name = "Clothing AdviserTests";
+			productName = "Clothing AdviserTests";
+			productReference = 26F67A6A1AC0526C008BA676 /* Clothing AdviserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26F67A461AC0526C008BA676 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PKO;
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Pavol Kominak";
+				TargetAttributes = {
+					26F67A4D1AC0526C008BA676 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 8HC4VRAN98;
+						SystemCapabilities = {
+							com.apple.InterAppAudio = {
+								enabled = 0;
+							};
+						};
+					};
+					26F67A691AC0526C008BA676 = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = 26F67A4D1AC0526C008BA676;
+					};
+				};
+			};
+			buildConfigurationList = 26F67A491AC0526C008BA676 /* Build configuration list for PBXProject "Clothing Adviser" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26F67A451AC0526C008BA676;
+			productRefGroup = 26F67A4F1AC0526C008BA676 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26F67A4D1AC0526C008BA676 /* Clothing Adviser */,
+				26F67A691AC0526C008BA676 /* Clothing AdviserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26F67A4C1AC0526C008BA676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26E657191ACADF89009F37B9 /* male_casual.csv in Resources */,
+				26E657141ACADF89009F37B9 /* female_business.csv in Resources */,
+				26E8FF181AF4F111006D09F1 /* users_full.archive in Resources */,
+				26F67A601AC0526C008BA676 /* Main.storyboard in Resources */,
+				26F67A651AC0526C008BA676 /* LaunchScreen.xib in Resources */,
+				26F67A621AC0526C008BA676 /* Images.xcassets in Resources */,
+				26E657181ACADF89009F37B9 /* male_business.csv in Resources */,
+				26E657131ACADF89009F37B9 /* female_business_casual.csv in Resources */,
+				26E657161ACADF89009F37B9 /* female_sportswear.csv in Resources */,
+				26E657171ACADF89009F37B9 /* male_business_casual.csv in Resources */,
+				26E6571A1ACADF89009F37B9 /* male_sportswear.csv in Resources */,
+				26E657151ACADF89009F37B9 /* female_casual.csv in Resources */,
+				263772D41ADD16150051234F /* tshirt_placeholder.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26F67A681AC0526C008BA676 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		267FB7D11AE6C00E00B232D1 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"";
+		};
+		567A9546862F1897240E3D11 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7EA06DEE2AC39B428C576CBD /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26F67A4A1AC0526C008BA676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				267D09BD1ADFD760005CCEB9 /* PKOClothingCombinationsDataSource.m in Sources */,
+				26E656F21ACAA4DF009F37B9 /* repmat.c in Sources */,
+				26E656EA1ACAA4DF009F37B9 /* rand.c in Sources */,
+				263772CF1ADCF55F0051234F /* UIView+ColorOfPoint.m in Sources */,
+				267D09CC1AE10BDD005CCEB9 /* PKOGeneratingClothingCombinationsViewController.m in Sources */,
+				26E656F31ACAA4DF009F37B9 /* RGB2HSV.c in Sources */,
+				267D09B41ADF233F005CCEB9 /* PKOClothingItem+PKOClothingCategoryContainers.m in Sources */,
+				26E656F11ACAA4DF009F37B9 /* rdivide.c in Sources */,
+				26F69A7D1ADBB0B900F870F3 /* PKOColorView.m in Sources */,
+				26E292641AF27F37001026CB /* UIColor+PKODefaultTint.m in Sources */,
+				26E656E31ACAA4DF009F37B9 /* getColorSpaces.c in Sources */,
+				26E656F51ACAA4DF009F37B9 /* std.c in Sources */,
+				26F115671AE450E20059E8D6 /* PKOClothingCombinationCollectionViewController.m in Sources */,
+				26E656E51ACAA4DF009F37B9 /* getPlaneFeatures.c in Sources */,
+				26E656F41ACAA4DF009F37B9 /* RGB2Lab.c in Sources */,
+				267D09C91AE00982005CCEB9 /* PKOClothingCombinationHeaderView.m in Sources */,
+				26E656EC1ACAA4DF009F37B9 /* rateColorPalette_data.c in Sources */,
+				26E656EF1ACAA4DF009F37B9 /* rateColorPalette_rtwutil.c in Sources */,
+				2613C1471AD7C9DF00AE7BAA /* PKOBackgroundRemovingViewController.m in Sources */,
+				26E656E61ACAA4DF009F37B9 /* mean.c in Sources */,
+				26E656E11ACAA4DF009F37B9 /* createFeaturesFromData.c in Sources */,
+				26E656651AC95BAA009F37B9 /* PKOClothingColorRating.m in Sources */,
+				267D09C31AE000AD005CCEB9 /* PKOClothingCombinationsCollectionViewController.m in Sources */,
+				26E656E01ACAA4DF009F37B9 /* createDatapointsFromNewData.c in Sources */,
+				263772D71ADD5B9B0051234F /* PKOBodyPartSelectionTableViewController.m in Sources */,
+				26E656E91ACAA4DF009F37B9 /* power.c in Sources */,
+				263772DA1ADDD20D0051234F /* PKOClothingCategorySelectionTableViewController.m in Sources */,
+				26046E861AD684B600654DD3 /* PKOClothingItemsHeaderView.m in Sources */,
+				26E656E21ACAA4DF009F37B9 /* getBasicStats.c in Sources */,
+				267D09D51AE2986F005CCEB9 /* PKOClothingCombination+PKORequiredBodyParts.m in Sources */,
+				26DF60D51AD5741B008624CD /* PKOClothingItemsViewController.m in Sources */,
+				267D09D01AE114D0005CCEB9 /* PKOClothingCombinationsGenerator.m in Sources */,
+				26F67AAB1AC70C1E008BA676 /* NSArray+PKORandom.m in Sources */,
+				26DF60DA1AD58230008624CD /* PKOClothingItemsDataSource.m in Sources */,
+				26E656EE1ACAA4DF009F37B9 /* rateColorPalette_initialize.c in Sources */,
+				26E656E71ACAA4DF009F37B9 /* median.c in Sources */,
+				26F67AA81AC6F4EC008BA676 /* UIImage+PKOClothingImage.m in Sources */,
+				26E656F01ACAA4DF009F37B9 /* rateColorPalette_terminate.c in Sources */,
+				26E656EB1ACAA4DF009F37B9 /* rateColorPalette.c in Sources */,
+				26F67A961AC43C28008BA676 /* CCColorCube.m in Sources */,
+				26E657241ACAE709009F37B9 /* PKOClothingProbabilities.m in Sources */,
+				26F67AA51AC4536E008BA676 /* PKOClothingCombination.m in Sources */,
+				26E656E81ACAA4DF009F37B9 /* pca2.c in Sources */,
+				26F67AA21AC44C37008BA676 /* PKOClothingImageStore.m in Sources */,
+				26E8FF151AF36D07006D09F1 /* UIView+Borders.m in Sources */,
+				26E656F61ACAA4DF009F37B9 /* sum.c in Sources */,
+				26F67A571AC0526C008BA676 /* AppDelegate.m in Sources */,
+				26F67AB11AC88D83008BA676 /* PKOUser.m in Sources */,
+				26F69A801ADBC32300F870F3 /* PKOColorsContainerView.m in Sources */,
+				26E656E41ACAA4DF009F37B9 /* getHueProbFeatures.c in Sources */,
+				2613C16B1AD953D700AE7BAA /* PKOColorsDetectionViewController.m in Sources */,
+				26F69A861ADBE33100F870F3 /* UISlider+PKOGradientBackground.m in Sources */,
+				267D09B11ADEB593005CCEB9 /* PKOClothingItemViewController.m in Sources */,
+				267D09AE1ADE7864005CCEB9 /* PKOUserStore.m in Sources */,
+				26F67A841AC056F8008BA676 /* PKOClothingItem.m in Sources */,
+				26D7442E1AD6F10D00460D95 /* PKOImagePickerActionSheet.m in Sources */,
+				26E656ED1ACAA4DF009F37B9 /* rateColorPalette_emxutil.c in Sources */,
+				26F67A971AC43C28008BA676 /* CCLocalMaximum.m in Sources */,
+				26E6571F1ACAE69F009F37B9 /* CHCSVParser.m in Sources */,
+				26E657251ACAE709009F37B9 /* PKOCSVHandler.m in Sources */,
+				26F67A541AC0526C008BA676 /* main.m in Sources */,
+				26046E801AD6717600654DD3 /* PKOClothingItemCollectionViewCell.m in Sources */,
+				2613C1591AD7E8AF00AE7BAA /* PKOBackgroundRemoving.mm in Sources */,
+				26F67AAE1AC7604B008BA676 /* PKOClothingCombinationStore.m in Sources */,
+				26F67A9F1AC43F34008BA676 /* PKOClothingItemStore.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26F67A661AC0526C008BA676 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26F67A711AC0526C008BA676 /* Clothing_AdviserTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26F67A6C1AC0526C008BA676 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26F67A4D1AC0526C008BA676 /* Clothing Adviser */;
+			targetProxy = 26F67A6B1AC0526C008BA676 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		26F67A5E1AC0526C008BA676 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26F67A5F1AC0526C008BA676 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		26F67A631AC0526C008BA676 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26F67A641AC0526C008BA676 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26F67A721AC0526C008BA676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		26F67A731AC0526C008BA676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26F67A751AC0526C008BA676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 040CFC5074E2376E3F085F2A /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Pavol Kominak (J6GAT9LNX7)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Pavol Kominak (J6GAT9LNX7)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "Clothing Adviser/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "9cfa7d84-7e86-4d30-9e7d-7e0acacd4088";
+			};
+			name = Debug;
+		};
+		26F67A761AC0526C008BA676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0FA3305C3F3BEDCF88512C0 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Pavol Kominak (8HC4VRAN98)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Pavol Kominak (8HC4VRAN98)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				INFOPLIST_FILE = "Clothing Adviser/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6b145663-afd6-455b-8fe7-f63cb825bc28";
+			};
+			name = Release;
+		};
+		26F67A781AC0526C008BA676 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Clothing AdviserTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clothing Adviser.app/Clothing Adviser";
+			};
+			name = Debug;
+		};
+		26F67A791AC0526C008BA676 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Clothing AdviserTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Clothing Adviser.app/Clothing Adviser";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26F67A491AC0526C008BA676 /* Build configuration list for PBXProject "Clothing Adviser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26F67A721AC0526C008BA676 /* Debug */,
+				26F67A731AC0526C008BA676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26F67A741AC0526C008BA676 /* Build configuration list for PBXNativeTarget "Clothing Adviser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26F67A751AC0526C008BA676 /* Debug */,
+				26F67A761AC0526C008BA676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26F67A771AC0526C008BA676 /* Build configuration list for PBXNativeTarget "Clothing AdviserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26F67A781AC0526C008BA676 /* Debug */,
+				26F67A791AC0526C008BA676 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 26F67A461AC0526C008BA676 /* Project object */;
+}

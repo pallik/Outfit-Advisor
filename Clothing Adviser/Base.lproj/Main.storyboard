@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="13F1077" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="RyG-0k-0XM">
+            <objects>
+                <navigationController id="B1U-cA-iUR" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="adl-ui-YyA">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="VfS-aL-3Jw" kind="relationship" relationship="rootViewController" id="Fm7-e5-eIC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pUX-au-z23" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1474" y="-1382"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="Kga-Y7-UDx">
+            <objects>
+                <pageViewController storyboardIdentifier="UIPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" pageSpacing="20" navigationOrientation="horizontal" spineLocation="none" id="Rhm-H0-SMq" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GNV-2J-esT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2274" y="-2146"/>
+        </scene>
+        <!--Generating outfits-->
+        <scene sceneID="LWA-BC-XUS">
+            <objects>
+                <viewController id="VfS-aL-3Jw" customClass="PKOGeneratingClothingCombinationsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ku4-MT-1pl"/>
+                        <viewControllerLayoutGuide type="bottom" id="IE7-nZ-ObF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vN4-Oe-6YU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="eKq-xX-VCu">
+                                <rect key="frame" x="282" y="290" width="37" height="37"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FFY-1I-3Pp">
+                                <rect key="frame" x="0.0" y="563" width="600" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="xpl-MY-kkA"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="rRT-bj-TuT"/>
+                                    <barButtonItem enabled="NO" systemItem="trash" id="DxN-Pm-87k">
+                                        <connections>
+                                            <action selector="refuseClothingCombination:" destination="VfS-aL-3Jw" id="E1h-yO-62W"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="FFY-1I-3Pp" secondAttribute="trailing" id="4hv-ad-b3b"/>
+                            <constraint firstAttribute="centerY" secondItem="eKq-xX-VCu" secondAttribute="centerY" constant="-8.5" id="ALB-nO-5Ug"/>
+                            <constraint firstItem="IE7-nZ-ObF" firstAttribute="top" secondItem="FFY-1I-3Pp" secondAttribute="bottom" id="Koh-kP-4lv"/>
+                            <constraint firstAttribute="centerX" secondItem="eKq-xX-VCu" secondAttribute="centerX" id="cX5-Bq-Tdn"/>
+                            <constraint firstItem="FFY-1I-3Pp" firstAttribute="leading" secondItem="vN4-Oe-6YU" secondAttribute="leading" id="jFY-FU-n7Y"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Generating outfits" id="KHs-oS-ZXc">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="4LK-G0-vkC">
+                            <connections>
+                                <segue destination="EAQ-ML-K7P" kind="unwind" identifier="CancelGeneratingClothingCombinationsSegueIdentifier" unwindAction="cancelToClothingCombinationsViewController:" id="4q6-1t-9b0"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="save" id="vz0-kr-uKs">
+                            <connections>
+                                <segue destination="EAQ-ML-K7P" kind="unwind" identifier="SaveNewClothingCombinationSegueIdentifier" unwindAction="saveNewClothingCombinationUnwindToClothingCombinationsViewController:" id="13o-Qa-Azh"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="eKq-xX-VCu" id="eaI-qh-0sP"/>
+                        <outlet property="deleteBarButtonItem" destination="DxN-Pm-87k" id="Qc4-W6-30Q"/>
+                        <outlet property="saveBarButtonItem" destination="vz0-kr-uKs" id="pfH-u7-K9j"/>
+                        <outlet property="toolbar" destination="FFY-1I-3Pp" id="m1f-3n-U3o"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x85-HR-HsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="EAQ-ML-K7P" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2274" y="-1382"/>
+        </scene>
+        <!--Outfits-->
+        <scene sceneID="BAV-tq-hBN">
+            <objects>
+                <collectionViewController id="xho-gF-JG7" customClass="PKOClothingCombinationsCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="gFp-yY-Sr5">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="Ri4-hj-3qN">
+                            <size key="itemSize" width="90" height="90"/>
+                            <size key="headerReferenceSize" width="50" height="44"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="5" minY="20" maxX="5" maxY="20"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PKOClothingItemCollectionViewCell" id="aQ3-3v-UCf" customClass="PKOClothingItemCollectionViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vrL-SI-ktQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="0.89595688870000001" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="vrL-SI-ktQ" firstAttribute="top" secondItem="aQ3-3v-UCf" secondAttribute="top" id="TGu-wQ-EaH"/>
+                                    <constraint firstAttribute="trailing" secondItem="vrL-SI-ktQ" secondAttribute="trailing" id="Wug-yg-jQn"/>
+                                    <constraint firstItem="vrL-SI-ktQ" firstAttribute="leading" secondItem="aQ3-3v-UCf" secondAttribute="leading" id="pRy-wb-8eq"/>
+                                    <constraint firstAttribute="bottom" secondItem="vrL-SI-ktQ" secondAttribute="bottom" id="ycU-BR-vAj"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="vrL-SI-ktQ" id="uCw-bf-XNp"/>
+                                    <segue destination="iGj-iJ-UPb" kind="show" identifier="ClothingCombinationSegueIdentifier" id="OdY-Vi-RYb"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PKOClothingCombinationHeaderView" id="kcz-Ih-qUB" customClass="PKOClothingCombinationHeaderView">
+                            <rect key="frame" x="0.0" y="64" width="600" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <subviews>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="LeE-mc-Awd">
+                                    <rect key="frame" x="8" y="8" width="584" height="29"/>
+                                    <segments>
+                                        <segment title="Sport"/>
+                                        <segment title="Casual"/>
+                                        <segment title="B/casual"/>
+                                        <segment title="Business"/>
+                                    </segments>
+                                    <connections>
+                                        <action selector="dressCodeChanged:" destination="xho-gF-JG7" eventType="valueChanged" id="98u-PG-jxd"/>
+                                    </connections>
+                                </segmentedControl>
+                            </subviews>
+                            <constraints>
+                                <constraint firstItem="LeE-mc-Awd" firstAttribute="leading" secondItem="kcz-Ih-qUB" secondAttribute="leadingMargin" id="2aC-gB-Mdc"/>
+                                <constraint firstItem="LeE-mc-Awd" firstAttribute="trailing" secondItem="kcz-Ih-qUB" secondAttribute="trailingMargin" id="3dv-Eq-IFl"/>
+                                <constraint firstItem="LeE-mc-Awd" firstAttribute="top" secondItem="kcz-Ih-qUB" secondAttribute="topMargin" id="j1D-zr-Ys6"/>
+                                <constraint firstAttribute="bottomMargin" secondItem="LeE-mc-Awd" secondAttribute="bottom" id="kLH-cH-S27"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="dressCodeSegmentedControl" destination="LeE-mc-Awd" id="cAQ-mq-dVA"/>
+                            </connections>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="xho-gF-JG7" id="M75-et-u1p"/>
+                            <outlet property="delegate" destination="xho-gF-JG7" id="Efv-qv-NtZ"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Outfits" id="mVT-f3-AOx">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="n7T-G8-hrA">
+                            <connections>
+                                <segue destination="B1U-cA-iUR" kind="presentation" identifier="GeneratingClothingCombinationsSegueIdentifier" id="fSh-1C-96z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mYN-FV-dss" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1474" y="-658"/>
+        </scene>
+        <!--Outfit-->
+        <scene sceneID="wdu-hh-zpS">
+            <objects>
+                <collectionViewController storyboardIdentifier="PKOClothingCombinationCollectionViewController" id="iGj-iJ-UPb" customClass="PKOClothingCombinationCollectionViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Zi1-nD-F37">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="05O-gO-K4c">
+                            <size key="itemSize" width="90" height="90"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="15" minY="15" maxX="15" maxY="15"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PKOClothingItemCollectionViewCell" id="lJJ-Ah-2Mj" customClass="PKOClothingItemCollectionViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="s25-Kv-DmS">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="s25-Kv-DmS" secondAttribute="bottom" id="FwI-wG-Igc"/>
+                                    <constraint firstItem="s25-Kv-DmS" firstAttribute="leading" secondItem="lJJ-Ah-2Mj" secondAttribute="leading" id="MbH-fU-qEo"/>
+                                    <constraint firstItem="s25-Kv-DmS" firstAttribute="top" secondItem="lJJ-Ah-2Mj" secondAttribute="top" id="aOA-cS-kom"/>
+                                    <constraint firstAttribute="trailing" secondItem="s25-Kv-DmS" secondAttribute="trailing" id="gAj-Jf-0OI"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="s25-Kv-DmS" id="REB-hy-JxG"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="iGj-iJ-UPb" id="3Ua-iP-sTZ"/>
+                            <outlet property="delegate" destination="iGj-iJ-UPb" id="CEV-R3-665"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Outfit" id="EG8-9U-9mz">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="gWh-pa-9dv">
+                            <connections>
+                                <action selector="deleteClothingCombination:" destination="iGj-iJ-UPb" id="U2q-PQ-PJB"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="Ttf-T1-6Iu" kind="unwind" identifier="DeleteClothingCombinationSegueIdentifier" unwindAction="deleteClothingCombinationUnwindToClothingCombinationsViewController:" id="eqm-oH-MQk"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p7j-OQ-gBC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="Ttf-T1-6Iu" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2274" y="-658"/>
+        </scene>
+        <!--Outfits-->
+        <scene sceneID="wmk-r0-7Tx">
+            <objects>
+                <navigationController id="c1y-uh-QBp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Outfits" image="outfit" id="SVj-wX-8oM"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="F1S-JZ-awY">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="xho-gF-JG7" kind="relationship" relationship="rootViewController" id="xjG-jc-7ga"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7cG-3f-1DG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="-658"/>
+        </scene>
+        <!--Clothes-->
+        <scene sceneID="j2z-jd-Wwh">
+            <objects>
+                <collectionViewController id="Mdd-tC-AyV" customClass="PKOClothingItemsViewController" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="c8h-rn-vkU">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="5" minimumInteritemSpacing="5" id="q5Z-WP-aAo">
+                            <size key="itemSize" width="90" height="90"/>
+                            <size key="headerReferenceSize" width="50" height="45"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="5" minY="5" maxX="5" maxY="5"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PKOClothingItemCollectionViewCell" id="eLo-M6-9GR" customClass="PKOClothingItemCollectionViewCell">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G5G-0i-oh0">
+                                            <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
+                                        </imageView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="G5G-0i-oh0" secondAttribute="trailing" id="HFt-K0-RQv"/>
+                                    <constraint firstItem="G5G-0i-oh0" firstAttribute="leading" secondItem="eLo-M6-9GR" secondAttribute="leading" id="Wr8-o4-XmR"/>
+                                    <constraint firstItem="G5G-0i-oh0" firstAttribute="top" secondItem="eLo-M6-9GR" secondAttribute="top" id="afP-HR-Suf"/>
+                                    <constraint firstAttribute="bottom" secondItem="G5G-0i-oh0" secondAttribute="bottom" id="x0X-mE-aBP"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="imageView" destination="G5G-0i-oh0" id="B9j-5j-QtE"/>
+                                    <segue destination="odH-WC-rJt" kind="show" identifier="ClothingItemSegueIdentifier" id="Yjp-aQ-MXK"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PKOClothingItemsHeaderView" id="r15-EP-bXb" customClass="PKOClothingItemsHeaderView">
+                            <rect key="frame" x="0.0" y="64" width="600" height="25"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="clothingCategoryLabel" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LIF-gh-3gn">
+                                    <rect key="frame" x="8" y="24" width="158" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottomMargin" secondItem="LIF-gh-3gn" secondAttribute="bottom" constant="-8" id="Rmh-rf-lJU"/>
+                                <constraint firstAttribute="centerY" secondItem="LIF-gh-3gn" secondAttribute="centerY" id="itA-R6-4g9"/>
+                                <constraint firstItem="LIF-gh-3gn" firstAttribute="leading" secondItem="r15-EP-bXb" secondAttribute="leadingMargin" id="zsY-88-SUf"/>
+                            </constraints>
+                            <variation key="default">
+                                <mask key="constraints">
+                                    <exclude reference="itA-R6-4g9"/>
+                                </mask>
+                            </variation>
+                            <connections>
+                                <outlet property="clothingCategoryLabel" destination="LIF-gh-3gn" id="T9i-cF-GXQ"/>
+                            </connections>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="Mdd-tC-AyV" id="uKp-9S-Bxg"/>
+                            <outlet property="delegate" destination="Mdd-tC-AyV" id="28V-nM-OVu"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" title="Clothes" id="CAb-1P-Qj4">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="0eY-rm-IBS">
+                            <connections>
+                                <action selector="addNewClothingItem:" destination="Mdd-tC-AyV" id="oau-Na-7RU"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="qhH-hF-HVE" kind="presentation" identifier="BackgroundRemovingSegueIdenfifier" id="vTH-1G-tgu"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qfk-Ho-8bI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1474" y="512"/>
+        </scene>
+        <!--Clothing item-->
+        <scene sceneID="35A-sE-7WP">
+            <objects>
+                <viewController title="Clothing item" id="odH-WC-rJt" customClass="PKOClothingItemViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ixv-gD-BLo"/>
+                        <viewControllerLayoutGuide type="bottom" id="fch-U8-IPT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hxq-0h-rvl">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="tBd-W1-6PT">
+                                <rect key="frame" x="16" y="72" width="568" height="338"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4Go-aA-Cuw" customClass="PKOColorsContainerView">
+                                <rect key="frame" x="16" y="418" width="568" height="67"/>
+                                <color key="backgroundColor" white="0.89595688870000001" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clothing category:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Et5-Wp-Y4g">
+                                <rect key="frame" x="16" y="522" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BnN-nI-etK">
+                                <rect key="frame" x="153" y="487" width="73" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <state key="normal" title="Body part">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Uh8-xs-MFG" kind="show" identifier="BodyPartSelectionSegueIdentifier" id="7q6-UN-tir"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I8s-m5-uDF">
+                                <rect key="frame" x="153" y="516" width="130" height="33"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                                <state key="normal" title="Clothing category">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="0mp-p5-qwm" kind="show" identifier="ClothingCategorySelectionSegueIdentifier" id="Kee-Q2-leV"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Body part:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghe-pw-Pwa">
+                                <rect key="frame" x="16" y="493" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4Go-aA-Cuw" firstAttribute="top" secondItem="tBd-W1-6PT" secondAttribute="bottom" constant="8" id="2w3-am-4Re"/>
+                            <constraint firstItem="tBd-W1-6PT" firstAttribute="leading" secondItem="hxq-0h-rvl" secondAttribute="leadingMargin" id="4Fk-d7-no1"/>
+                            <constraint firstItem="BnN-nI-etK" firstAttribute="leading" secondItem="Ghe-pw-Pwa" secondAttribute="trailing" constant="8" id="6SJ-J0-FOo"/>
+                            <constraint firstItem="Et5-Wp-Y4g" firstAttribute="top" secondItem="Ghe-pw-Pwa" secondAttribute="bottom" constant="8" id="DXQ-0n-bqP"/>
+                            <constraint firstItem="4Go-aA-Cuw" firstAttribute="trailing" secondItem="hxq-0h-rvl" secondAttribute="trailingMargin" id="IER-wI-9HU"/>
+                            <constraint firstItem="Et5-Wp-Y4g" firstAttribute="leading" secondItem="Ghe-pw-Pwa" secondAttribute="leading" id="RXg-us-6Jt"/>
+                            <constraint firstItem="Ghe-pw-Pwa" firstAttribute="top" secondItem="4Go-aA-Cuw" secondAttribute="bottom" constant="8" id="aAl-Yz-W1X"/>
+                            <constraint firstItem="tBd-W1-6PT" firstAttribute="trailing" secondItem="hxq-0h-rvl" secondAttribute="trailingMargin" id="c5I-Z7-sD6"/>
+                            <constraint firstItem="tBd-W1-6PT" firstAttribute="height" secondItem="4Go-aA-Cuw" secondAttribute="height" multiplier="5" id="czN-QU-pxN"/>
+                            <constraint firstItem="I8s-m5-uDF" firstAttribute="leading" secondItem="Et5-Wp-Y4g" secondAttribute="trailing" constant="8" id="egv-yu-Ebb"/>
+                            <constraint firstItem="4Go-aA-Cuw" firstAttribute="leading" secondItem="hxq-0h-rvl" secondAttribute="leadingMargin" id="ehl-Rs-06M"/>
+                            <constraint firstItem="Et5-Wp-Y4g" firstAttribute="baseline" secondItem="I8s-m5-uDF" secondAttribute="baseline" id="hbm-H3-yUA"/>
+                            <constraint firstItem="fch-U8-IPT" firstAttribute="top" secondItem="Et5-Wp-Y4g" secondAttribute="bottom" constant="8" id="lhe-yA-7BF"/>
+                            <constraint firstItem="Et5-Wp-Y4g" firstAttribute="width" secondItem="Ghe-pw-Pwa" secondAttribute="width" id="mO1-2E-2o3"/>
+                            <constraint firstItem="tBd-W1-6PT" firstAttribute="top" secondItem="Ixv-gD-BLo" secondAttribute="bottom" constant="8" id="rG7-in-kuI"/>
+                            <constraint firstItem="Ghe-pw-Pwa" firstAttribute="leading" secondItem="hxq-0h-rvl" secondAttribute="leadingMargin" id="vCi-NV-6M2"/>
+                            <constraint firstItem="BnN-nI-etK" firstAttribute="baseline" secondItem="Ghe-pw-Pwa" secondAttribute="baseline" id="vFC-gf-OBn"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Clothing item" id="1Rd-8v-sa6">
+                        <barButtonItem key="rightBarButtonItem" systemItem="trash" id="Exv-0V-MD5">
+                            <connections>
+                                <action selector="deleteClothingItem:" destination="odH-WC-rJt" id="vTm-SR-jdX"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="bodyPartButton" destination="BnN-nI-etK" id="bEW-PM-8tv"/>
+                        <outlet property="clothingCategoryButton" destination="I8s-m5-uDF" id="Kgg-gd-Tpd"/>
+                        <outlet property="colorsContainerView" destination="4Go-aA-Cuw" id="1Zd-xb-Tx8"/>
+                        <outlet property="imageView" destination="tBd-W1-6PT" id="Ziq-Iy-TKR"/>
+                        <segue destination="prU-C4-q6P" kind="unwind" identifier="DeleteClothingItemSegueIdentifier" unwindAction="deleteClothingItemUnwindToClothingItemsViewController:" id="PIw-BP-x5f"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LlP-Qg-oK5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="prU-C4-q6P" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2274" y="512"/>
+        </scene>
+        <!--Background removing-->
+        <scene sceneID="HDZ-zG-fFI">
+            <objects>
+                <viewController id="lfY-3j-FqJ" customClass="PKOBackgroundRemovingViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dNf-MV-Xjb"/>
+                        <viewControllerLayoutGuide type="bottom" id="IjH-DV-tCW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V7q-rH-1EM">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="751" verticalHuggingPriority="751" translatesAutoresizingMaskIntoConstraints="NO" id="HLa-51-C0f">
+                                <rect key="frame" x="16" y="72" width="568" height="483"/>
+                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="bv3-LC-hTJ">
+                                <rect key="frame" x="282" y="290" width="37" height="37"/>
+                                <color key="tintColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="300" minimumValue="100" maximumValue="1000" stepValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="NyO-qj-B1s">
+                                <rect key="frame" x="253" y="563" width="94" height="29"/>
+                                <connections>
+                                    <action selector="kConstantStepperValueDidChange:" destination="lfY-3j-FqJ" eventType="valueChanged" id="Bou-aD-x6r"/>
+                                </connections>
+                            </stepper>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="HLa-51-C0f" firstAttribute="top" secondItem="dNf-MV-Xjb" secondAttribute="bottom" constant="8" id="71o-kI-YnW"/>
+                            <constraint firstAttribute="centerX" secondItem="bv3-LC-hTJ" secondAttribute="centerX" id="AbB-HV-0Vq"/>
+                            <constraint firstAttribute="centerY" secondItem="bv3-LC-hTJ" secondAttribute="centerY" constant="-8" id="DRe-sm-O3O"/>
+                            <constraint firstItem="NyO-qj-B1s" firstAttribute="top" secondItem="HLa-51-C0f" secondAttribute="bottom" constant="8" id="Gre-PD-g2j"/>
+                            <constraint firstItem="IjH-DV-tCW" firstAttribute="top" secondItem="NyO-qj-B1s" secondAttribute="bottom" constant="8" id="WSJ-aG-yS3"/>
+                            <constraint firstItem="HLa-51-C0f" firstAttribute="leading" secondItem="V7q-rH-1EM" secondAttribute="leadingMargin" id="cll-Cb-fev"/>
+                            <constraint firstItem="HLa-51-C0f" firstAttribute="trailing" secondItem="V7q-rH-1EM" secondAttribute="trailingMargin" id="hVj-kU-UMd"/>
+                            <constraint firstAttribute="centerX" secondItem="NyO-qj-B1s" secondAttribute="centerX" id="hdG-RP-2uk"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Background removing" id="9cw-pH-RIU">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="BSa-jk-izJ">
+                            <connections>
+                                <segue destination="7i0-9j-NyP" kind="unwind" identifier="CancelBackgroundRemovingSegueIdentifier" unwindAction="cancelToClothingItemsViewController:" id="Kcl-6j-7K6"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" enabled="NO" title="Next" id="1do-FB-YqZ">
+                            <connections>
+                                <segue destination="qIT-El-2Dt" kind="show" identifier="ColorsDetectionSegueIdentifier" id="fOd-U2-HMm"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="activityIndicator" destination="bv3-LC-hTJ" id="pyz-5z-3rZ"/>
+                        <outlet property="doneBarButtonItem" destination="1do-FB-YqZ" id="7po-dk-9nn"/>
+                        <outlet property="imageView" destination="HLa-51-C0f" id="5HJ-6q-A8J"/>
+                        <outlet property="kConstantStepper" destination="NyO-qj-B1s" id="xg7-xI-AqW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2xV-ru-Edm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="7i0-9j-NyP" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2274" y="1230"/>
+        </scene>
+        <!--Colors detection-->
+        <scene sceneID="ZXS-Ov-20j">
+            <objects>
+                <viewController title="Colors detection" id="qIT-El-2Dt" customClass="PKOColorsDetectionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YDt-M2-gmz"/>
+                        <viewControllerLayoutGuide type="bottom" id="nbK-Ub-1Gy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LOM-0d-xZc">
+                        <rect key="frame" x="0.0" y="64" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iNb-8x-zBk">
+                                <rect key="frame" x="16" y="72" width="568" height="353"/>
+                            </imageView>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="B8O-pK-rr6">
+                                <rect key="frame" x="52" y="512" width="496" height="31"/>
+                                <connections>
+                                    <action selector="saturationSliderValueDidChange:" destination="qIT-El-2Dt" eventType="valueChanged" id="flh-Bq-eSW"/>
+                                </connections>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="mKN-xS-hnB">
+                                <rect key="frame" x="52" y="550" width="496" height="31"/>
+                                <connections>
+                                    <action selector="brightnessSliderValueDidChange:" destination="qIT-El-2Dt" eventType="valueChanged" id="N5I-Nd-aVU"/>
+                                </connections>
+                            </slider>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xqr-jE-Xds" customClass="PKOColorsContainerView">
+                                <rect key="frame" x="16" y="433" width="568" height="71"/>
+                                <color key="backgroundColor" white="0.89595688870000001" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWL-S8-W95">
+                                <rect key="frame" x="16" y="512" width="30" height="68"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <state key="normal" title="x"/>
+                                <connections>
+                                    <action selector="deleteSelectedColor:" destination="qIT-El-2Dt" eventType="touchUpInside" id="PuK-49-46M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ciU-p3-mz1">
+                                <rect key="frame" x="554" y="512" width="30" height="68"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="35"/>
+                                <state key="normal" title="+"/>
+                                <connections>
+                                    <action selector="addNewColor:" destination="qIT-El-2Dt" eventType="touchUpInside" id="hZp-2k-263"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iNb-8x-zBk" firstAttribute="leading" secondItem="LOM-0d-xZc" secondAttribute="leadingMargin" id="3jx-HM-21K"/>
+                            <constraint firstItem="cWL-S8-W95" firstAttribute="top" secondItem="xqr-jE-Xds" secondAttribute="bottom" constant="8" id="4fY-k9-ov9"/>
+                            <constraint firstItem="nbK-Ub-1Gy" firstAttribute="top" secondItem="cWL-S8-W95" secondAttribute="bottom" constant="20" id="5ba-yA-xJW"/>
+                            <constraint firstItem="xqr-jE-Xds" firstAttribute="centerX" secondItem="iNb-8x-zBk" secondAttribute="centerX" id="79h-42-rcu"/>
+                            <constraint firstItem="ciU-p3-mz1" firstAttribute="trailing" secondItem="LOM-0d-xZc" secondAttribute="trailingMargin" id="CNo-J7-fBU"/>
+                            <constraint firstItem="iNb-8x-zBk" firstAttribute="height" secondItem="xqr-jE-Xds" secondAttribute="height" multiplier="5" id="Csx-i4-GKm"/>
+                            <constraint firstItem="nbK-Ub-1Gy" firstAttribute="top" secondItem="ciU-p3-mz1" secondAttribute="bottom" constant="20" id="GcD-WH-TAa"/>
+                            <constraint firstItem="mKN-xS-hnB" firstAttribute="leading" secondItem="cWL-S8-W95" secondAttribute="trailing" constant="8" id="JEw-SL-De7"/>
+                            <constraint firstItem="mKN-xS-hnB" firstAttribute="top" secondItem="B8O-pK-rr6" secondAttribute="bottom" constant="8" id="L01-db-hFV"/>
+                            <constraint firstItem="ciU-p3-mz1" firstAttribute="leading" secondItem="B8O-pK-rr6" secondAttribute="trailing" constant="8" id="MIX-17-JF3"/>
+                            <constraint firstItem="ciU-p3-mz1" firstAttribute="top" secondItem="xqr-jE-Xds" secondAttribute="bottom" constant="8" id="Mbf-MG-Fmj"/>
+                            <constraint firstItem="xqr-jE-Xds" firstAttribute="width" secondItem="iNb-8x-zBk" secondAttribute="width" id="OoB-NZ-6Rk"/>
+                            <constraint firstItem="ciU-p3-mz1" firstAttribute="leading" secondItem="mKN-xS-hnB" secondAttribute="trailing" constant="8" id="Pj0-f0-chX"/>
+                            <constraint firstItem="B8O-pK-rr6" firstAttribute="leading" secondItem="cWL-S8-W95" secondAttribute="trailing" constant="8" id="QTf-3s-362"/>
+                            <constraint firstItem="nbK-Ub-1Gy" firstAttribute="top" secondItem="mKN-xS-hnB" secondAttribute="bottom" constant="20" id="cbn-EF-HeA"/>
+                            <constraint firstItem="cWL-S8-W95" firstAttribute="leading" secondItem="LOM-0d-xZc" secondAttribute="leadingMargin" id="dMM-cX-VFY"/>
+                            <constraint firstItem="xqr-jE-Xds" firstAttribute="top" secondItem="iNb-8x-zBk" secondAttribute="bottom" constant="8" id="g24-YW-dbx"/>
+                            <constraint firstItem="iNb-8x-zBk" firstAttribute="top" secondItem="YDt-M2-gmz" secondAttribute="bottom" constant="8" id="g6k-Fp-jNY"/>
+                            <constraint firstItem="iNb-8x-zBk" firstAttribute="trailing" secondItem="LOM-0d-xZc" secondAttribute="trailingMargin" id="xjk-WX-BRR"/>
+                            <constraint firstItem="B8O-pK-rr6" firstAttribute="top" secondItem="xqr-jE-Xds" secondAttribute="bottom" constant="8" id="yoB-Wt-Gxc"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Colors detection" id="s9O-Uf-MQ7">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="tjg-bP-cJ4">
+                            <connections>
+                                <segue destination="Uh8-xs-MFG" kind="show" identifier="BodyPartSelectionSegueIdentifier" id="d0k-BS-iE3"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="brightnessSlider" destination="mKN-xS-hnB" id="NUZ-so-Bp7"/>
+                        <outlet property="colorsContainerView" destination="xqr-jE-Xds" id="lPk-gq-yfu"/>
+                        <outlet property="deleteColorButton" destination="cWL-S8-W95" id="6bK-qw-Lpx"/>
+                        <outlet property="imageView" destination="iNb-8x-zBk" id="pz9-6D-OAi"/>
+                        <outlet property="saturationSlider" destination="B8O-pK-rr6" id="iNQ-SD-ho9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AcD-SY-g4C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2958" y="1230"/>
+        </scene>
+        <!--Select body part-->
+        <scene sceneID="Vwl-uc-10c">
+            <objects>
+                <tableViewController title="Select body part" id="Uh8-xs-MFG" customClass="PKOBodyPartSelectionTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8vQ-vg-3HI">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PKOClothingCategoryContainerTableViewCell" textLabel="c6N-p1-wng" style="IBUITableViewCellStyleDefault" id="KGH-Dx-QHw">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGH-Dx-QHw" id="pFS-lV-GFh">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="c6N-p1-wng">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="0mp-p5-qwm" kind="show" identifier="ClothingCategorySelectionSegueIdentifier" id="ozB-d7-nLz"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Uh8-xs-MFG" id="sJC-3G-6ws"/>
+                            <outlet property="delegate" destination="Uh8-xs-MFG" id="net-C6-0sg"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b1w-Dg-OTo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3642" y="1230"/>
+        </scene>
+        <!--Select clothing category-->
+        <scene sceneID="0oH-hK-fle">
+            <objects>
+                <tableViewController title="Select clothing category" id="0mp-p5-qwm" customClass="PKOClothingCategorySelectionTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="DX8-65-9de">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PKOClothingCategoryTableViewCell" textLabel="nBu-k9-BxS" style="IBUITableViewCellStyleDefault" id="0Ud-9H-8O1">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="0Ud-9H-8O1" id="AKq-V1-wFO">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nBu-k9-BxS">
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="0mp-p5-qwm" id="8jR-AQ-SMb"/>
+                            <outlet property="delegate" destination="0mp-p5-qwm" id="9sX-sU-Mww"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Select clothing category" id="Jza-kt-hnZ">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="save" id="OxX-PH-OP6">
+                            <connections>
+                                <action selector="saveClothingItem:" destination="0mp-p5-qwm" id="4DD-1v-LsD"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="eLS-FR-A27" kind="unwind" identifier="SaveNewClothingItemSegueIdentifier" unwindAction="saveNewClothingItemUnwindToClothingItemsViewController:" id="QGf-lQ-06G"/>
+                        <segue destination="eLS-FR-A27" kind="unwind" identifier="EditClothingItemSegueIdentifier" unwindAction="editClothingItemUnwindToClothingItemViewController:" id="Fzu-Qs-BkL"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c6H-Ha-UAq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="eLS-FR-A27" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="4321" y="1230"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="yl2-sM-qoP">
+            <objects>
+                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
+                        <rect key="frame" x="0.0" y="975" width="768" height="49"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="c1y-uh-QBp" kind="relationship" relationship="viewControllers" id="DZa-4v-C16"/>
+                        <segue destination="8gU-Am-K70" kind="relationship" relationship="viewControllers" id="0HB-dy-ypv"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6" y="-84"/>
+        </scene>
+        <!--Clothes-->
+        <scene sceneID="4Qu-DW-2Cg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="8gU-Am-K70" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Clothes" image="hanger" id="E3d-nt-0qt"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="50C-3D-elr">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Mdd-tC-AyV" kind="relationship" relationship="rootViewController" id="lo9-Cq-Cgv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gzA-9J-BZt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="790" y="512"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="euU-P5-bq8">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qhH-hF-HVE" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ZKg-8Z-EMe">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="lfY-3j-FqJ" kind="relationship" relationship="rootViewController" id="5Vz-Oy-Fkv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6PX-lG-9uo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1474" y="1230"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hanger" width="25" height="14"/>
+        <image name="outfit" width="17" height="25"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="Kee-Q2-leV"/>
+        <segue reference="7q6-UN-tir"/>
+    </inferredMetricsTieBreakers>
+</document>
